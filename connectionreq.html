@@ -1,0 +1,3110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width,target-densitydpi=medium-dpi">
+<title>Flexer Server</title>
+<!--[if IE]>
+<style>
+@font-face {
+ font-family:'HWPserif';
+ src: url('HWPserif.eot');
+}
+@font-face {
+ font-family:'HWPserif';
+ src: url('HWPserifB.eot');
+ font-weight:bold;
+}
+@font-face {
+ font-family:'HWPsansserif';
+ src: url('HWPsansserif.eot');
+}
+@font-face {
+ font-family:'HWPsansserif';
+ src: url('HWPsansserifB.eot');
+ font-weight:bold;
+}
+</style>
+<![endif]-->
+<!--[if !IE]> -->
+<style>
+@font-face {
+ font-family:'HWPserif';
+ src: url('HWPserif.ttf') format('truetype'),
+ url('HWPserif.eot');
+}
+@font-face {
+ font-family:'HWPserif';
+ src: url('HWPserifB.ttf') format('truetype'),
+ url('HWPserifB.eot');
+ font-weight:bold;
+}
+@font-face {
+ font-family:'HWPsansserif';
+ src: url('HWPsansserif.ttf') format('truetype'),
+ url('HWPsansserif.eot');
+}
+@font-face {
+ font-family:'HWPsansserif';
+ src: url('HWPsansserifB.ttf') format('truetype'),
+ url('HWPsansserifB.eot');
+ font-weight:bold;
+}
+</style>
+<!-- <![endif]-->
+<style>
+table{border-collapse:collapse;}
+td{position:relative;}
+div{position:relative;}
+.gii-scaleX {
+	transform-origin:0% 0%;
+	-ms-transform-origin:0% 0%;
+	-webkit-transform-origin:0% 0%;
+}
+@media screen and (max-width: 636px) {
+   .gii-scaleX {
+        transform:scaleX(0.8);
+        -ms-transform:scaleX(0.8);
+        -webkit-transform:scaleX(0.8);
+	}
+}
+@media screen and (max-width: 557px) {
+   .gii-scaleX {
+        transform:scaleX(0.7);
+        -ms-transform:scaleX(0.7);
+        -webkit-transform:scaleX(0.7);
+	}
+}
+@media screen and (max-width: 480px) {
+   .gii-scaleX {
+        transform:scaleX(0.6);
+        -ms-transform:scaleX(0.6);
+        -webkit-transform:scaleX(0.6);
+	}
+}
+@media screen and (max-width: 400px) {
+   .gii-scaleX {
+		transform:scaleX(0.5);
+		-ms-transform:scaleX(0.5);
+		-webkit-transform:scaleX(0.5);
+	}
+}
+@media screen and (max-width: 320px) {
+   .gii-scaleX {
+		transform:scaleX(0.4);
+		-ms-transform:scaleX(0.4);
+		-webkit-transform:scaleX(0.4);
+	}
+}
+@media screen and (max-width: 239px) {
+   .gii-scaleX {
+		transform:scaleX(0.3);
+		-ms-transform:scaleX(0.3);
+		-webkit-transform:scaleX(0.3);
+	}
+}
+.gii-scale {
+	transform-origin:0% 0%;
+	-webkit-transform-origin:0% 0%;
+	-webkit-transform-origin:0% 0%;
+}
+@media screen and (max-width: 636px) {
+   .gii-scale {
+        transform:scale(0.8);
+        -ms-transform:scale(0.8);
+        -webkit-transform:scale(0.8);
+	}
+}
+@media screen and (max-width: 557px) {
+   .gii-scale {
+        transform:scale(0.7);
+        -ms-transform:scale(0.7);
+        -webkit-transform:scale(0.7);
+	}
+}
+@media screen and (max-width: 480px) {
+   .gii-scale {
+        transform:scale(0.6);
+        -ms-transform:scale(0.6);
+        -webkit-transform:scale(0.6);
+	}
+}
+@media screen and (max-width: 400px) {
+   .gii-scale {
+		transform:scale(0.5);
+		-ms-transform:scale(0.5);
+		-webkit-transform:scale(0.5);
+	}
+}
+@media screen and (max-width: 320px) {
+   .gii-scale {
+		transform:scale(0.4);
+		-ms-transform:scale(0.4);
+		-webkit-transform:scale(0.4);
+	}
+}
+@media screen and (max-width: 239px) {
+   .gii-scale {
+		transform:scale(0.3);
+		-ms-transform:scale(0.3);
+		-webkit-transform:scale(0.3);
+	}
+}
+.ps0 {
+ line-height:150.00%; text-align:left;text-indent:0;margin:0;}
+.ps1 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps2 {
+ line-height:130.00%; text-align:center;text-indent:0;margin:0;}
+.ps3 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps4 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps5 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps6 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps7 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps8 {
+ line-height:130.00%; text-align:center;text-indent:0;margin:0;}
+.ps9 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps10 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps11 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps12 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps13 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps14 {
+ line-height:130.00%; text-align:justify;text-indent:0;margin:0;}
+.ps15 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps16 {
+ line-height:150.00%; text-align:center;text-indent:0;margin:0;}
+.ps17 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps18 {
+ line-height:130.00%; text-align:justify;text-indent:0;margin:0;}
+.ps19 {
+ line-height:150.00%; text-align:left;text-indent:0;margin:0;}
+.ps20 {
+ line-height:160.00%; text-align:left;text-indent:0;margin:0;}
+.ps21 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps22 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps23 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps24 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps25 {
+ line-height:100.00%; text-align:justify;text-indent:0;margin:0;}
+.ps26 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps27 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps28 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps29 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps30 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps31 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps32 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps33 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps34 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps35 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps36 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps37 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps38 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps39 {
+ line-height:160.00%; text-align:left;text-indent:0;margin:0;}
+.ps40 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps41 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps42 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps43 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps44 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps45 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps46 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps47 {
+ line-height:127.00%; text-align:left;text-indent:0;margin:0;}
+.ps48 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps49 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps50 {
+ line-height:110.00%; text-align:center;text-indent:0;margin:0;}
+.ps51 {
+ line-height:100.00%; text-align:center;text-indent:0;margin:0;}
+.ps52 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps53 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps54 {
+ line-height:175.00%; text-align:justify;text-indent:0;margin:0;}
+.ps55 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps56 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps57 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps58 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps59 {
+ line-height:150.00%; text-align:center;text-indent:0;margin:0;}
+.ps60 {
+ line-height:130.00%; text-align:justify;text-indent:0;margin:0;}
+.ps61 {
+ line-height:130.00%; text-align:left;text-indent:0;margin:0;}
+.ps62 {
+ line-height:100.00%; text-align:justify;text-indent:0;margin:0;}
+.ps63 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps64 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps65 {
+ line-height:130.00%; text-align:center;text-indent:0;margin:0;}
+.ps66 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps67 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps68 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps69 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps70 {
+ line-height:100.00%; text-align:justify;text-indent:0;margin:0;}
+.ps71 {
+ line-height:130.00%; text-align:right;text-indent:0;margin:0;}
+.ps72 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps73 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps74 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps75 {
+ line-height:150.00%; text-align:center;text-indent:0;margin:0;}
+.ps76 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps77 {
+ line-height:150.00%; text-align:left;text-indent:0;margin:0;}
+.ps78 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps79 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps80 {
+ line-height:100.00%; text-align:center;text-indent:0;margin:0;}
+.ps81 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps82 {
+ line-height:160.00%; text-align:left;text-indent:0;margin:0;}
+.ps83 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps84 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps85 {
+ line-height:190.00%; text-align:justify;text-indent:0;margin:0;}
+.ps86 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps87 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps88 {
+ line-height:130.00%; text-align:center;text-indent:0;margin:0;}
+.ps89 {
+ line-height:120.00%; text-align:center;text-indent:0;margin:0;}
+.ps90 {
+ line-height:130.00%; text-align:justify;text-indent:0;margin:0;}
+.ps91 {
+ line-height:175.00%; text-align:justify;text-indent:0;margin:0;}
+.ps92 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps93 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps94 {
+ line-height:175.00%; text-align:justify;text-indent:0;margin:0;}
+.ps95 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps96 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps97 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps98 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps99 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps100 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps101 {
+ line-height:100.00%; text-align:center;text-indent:0;margin:0;}
+.ps102 {
+ line-height:120.00%; text-align:center;text-indent:0;margin:0;}
+.ps103 {
+ line-height:130.00%; text-align:justify;text-indent:0;margin:0;}
+.ps104 {
+ line-height:140.00%; text-align:justify;text-indent:0;margin:0;}
+.ps105 {
+ line-height:130.00%; text-align:justify;text-indent:0;margin:0;}
+.ps106 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps107 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps108 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps109 {
+ line-height:160.00%; text-align:right;text-indent:0;margin:0;}
+.ps110 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps111 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps112 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps113 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps114 {
+ line-height:140.00%; text-align:justify;text-indent:0;margin:0;}
+.ps115 {
+ line-height:190.00%; text-align:center;text-indent:0;margin:0;}
+.ps116 {
+ line-height:180.00%; text-align:center;text-indent:0;margin:0;}
+.ps117 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps118 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps119 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps120 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps121 {
+ line-height:140.00%; text-align:justify;text-indent:0;margin:0;}
+.ps122 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps123 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps124 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps125 {
+ line-height:100.00%; text-align:justify;text-indent:0;margin:0;}
+.ps126 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.ps127 {
+ line-height:140.00%; text-align:justify;text-indent:0;margin:0;}
+.ps128 {
+ line-height:120.00%; text-align:justify;text-indent:0;margin:0;}
+.ps129 {
+ line-height:100.00%; text-align:justify;text-indent:0;margin:0;}
+.ps130 {
+ line-height:135.00%; text-align:justify;text-indent:0;margin:0;}
+.ps131 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps132 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps133 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps134 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps135 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps136 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps137 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps138 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps139 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps140 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps141 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps142 {
+ line-height:140.00%; text-align:justify;text-indent:0;margin:0;}
+.ps143 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps144 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps145 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps146 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps147 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps148 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps149 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps150 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps151 {
+ line-height:105.00%; text-align:justify;text-indent:0;margin:0;}
+.ps152 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps153 {
+ line-height:120.00%; text-align:justify;text-indent:0;margin:0;}
+.ps154 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps155 {
+ line-height:180.00%; text-align:justify;text-indent:0;margin:0;}
+.ps156 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps157 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps158 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps159 {
+ line-height:140.00%; text-align:justify;text-indent:0;margin:0;}
+.ps160 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps161 {
+ line-height:100.00%; text-align:justify;text-indent:0;margin:0;}
+.ps162 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps163 {
+ line-height:160.00%; text-align:justify;text-indent:0;margin:0;}
+.ps164 {
+ line-height:150.00%; text-align:justify;text-indent:0;margin:0;}
+.ps165 {
+ line-height:140.00%; text-align:justify;text-indent:0;margin:0;}
+.ps166 {
+ line-height:160.00%; text-align:center;text-indent:0;margin:0;}
+.cs0 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs1 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:-0.05em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs2 {
+/* '명조' */
+ font-family:'HWPserif'; font-size:10.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs3 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs4 {
+/* '한양신명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs5 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs6 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs7 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:24.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs8 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:-0.05em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs9 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:16.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs10 {
+/* '바탕' */
+ font-family:'HWPserif'; font-size:6.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-decoration:underLine; text-shadow: none;}
+.cs11 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs12 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs13 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs14 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:16.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs15 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs16 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs17 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs18 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:italic; font-weight:normal; color:#404040; text-shadow: none;}
+.cs19 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:italic; font-weight:normal; color:#000000; text-shadow: none;}
+.cs20 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:italic; font-weight:normal; color:#5B9BD5; text-shadow: none;}
+.cs21 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#5A5A5A; text-shadow: none;}
+.cs22 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#5B9BD5; text-shadow: none;}
+.cs23 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:italic; font-weight:bold; color:#000000; text-shadow: none;}
+.cs24 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:16.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#2E74B5; text-shadow: none;}
+.cs25 {
+/* '바탕' */
+ font-family:'HWPserif'; font-size:17.25pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs26 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:17.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs27 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs28 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs29 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.12em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs30 {
+/* 'HY울릉도B' */
+ font-family:'HWPsansserif'; font-size:23.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs31 {
+/* 'HY울릉도B' */
+ font-family:'HWPsansserif'; font-size:23.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs32 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:-0.15em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs33 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.13em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs34 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs35 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs36 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.05em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs37 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.15em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs38 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.25em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs39 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs40 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:7.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs41 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs42 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs43 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.03em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs44 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs45 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs46 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.15em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs47 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.11em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs48 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.09em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs49 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:0.08em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs50 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.14em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs51 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs52 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:22.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs53 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs54 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:22.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs55 {
+/* 'HY울릉도B' */
+ font-family:'HWPsansserif'; font-size:18.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs56 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:30.00pt; letter-spacing:0.50em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs57 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.50em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs58 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs59 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:16.00pt; letter-spacing:-0.03em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs60 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#191919; text-shadow: none;}
+.cs61 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#191919; text-shadow: none;}
+.cs62 {
+/* '휴먼고딕' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs63 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs64 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-decoration:underLine; text-shadow: none;}
+.cs65 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:24.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs66 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs67 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:14.00pt; letter-spacing:-0.11em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs68 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs69 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs70 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:-0.03em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs71 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs72 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs73 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs74 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs75 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs76 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs77 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#FF0000; text-shadow: none;}
+.cs78 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs79 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs80 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.05em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs81 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs82 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.05em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs83 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs84 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs85 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs86 {
+/* '한양신명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs87 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.07em; font-style:normal; font-weight:normal; color:#0000FF; text-shadow: none;}
+.cs88 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.07em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs89 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:17.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs90 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:17.00pt; letter-spacing:-0.07em; font-style:normal; font-weight:normal; color:#315F97; text-shadow: none;}
+.cs91 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:32.00pt; letter-spacing:0.15em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs92 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.22em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs93 {
+/* '한양견고딕' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs94 {
+/* '굴림' */
+ font-family:'HWPsansserif'; font-size:24.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs95 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:16.00pt; letter-spacing:-0.03em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs96 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:18.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs97 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:18.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#0059FF; text-shadow: none;}
+.cs98 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:16.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs99 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:16.00pt; letter-spacing:-0.03em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs100 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:17.00pt; letter-spacing:-0.14em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs101 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:20.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs102 {
+/* '굴림' */
+ font-family:'HWPsansserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs103 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:20.00pt; letter-spacing:-0.14em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs104 {
+/* '한양견고딕' */
+ font-family:'HWPsansserif'; font-size:28.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs105 {
+/* '한양견고딕' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs106 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:24.00pt; letter-spacing:0.01em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs107 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs108 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs109 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs110 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:16.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#FFFFFF; text-shadow: none;}
+.cs111 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:16.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs112 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs113 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#0000FF; text-shadow: none;}
+.cs114 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#FF0000; text-shadow: none;}
+.cs115 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:8.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs116 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs117 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs118 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs119 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs120 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs121 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs122 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs123 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs124 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs125 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs126 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:32.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs127 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.02em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs128 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.02em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs129 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs130 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.12em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs131 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs132 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs133 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs134 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs135 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs136 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs137 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs138 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs139 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs140 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs141 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs142 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs143 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs144 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs145 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs146 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:15.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs147 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs148 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:14.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs149 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:14.00pt; letter-spacing:0.07em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs150 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs151 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs152 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs153 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs154 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:0.07em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs155 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs156 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs157 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs158 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs159 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:16.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs160 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs161 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs162 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs163 {
+/* '신명 태명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.10em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs164 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs165 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs166 {
+/* 'HY헤드라인M' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs167 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:11.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs168 {
+/* 'NanumGothic' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs169 {
+/* '신명 태고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs170 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs171 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:0.04em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs172 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:12.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs173 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs174 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:16.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs175 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:6.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs176 {
+/* '신명 태고딕' */
+ font-family:'HWPsansserif'; font-size:20.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-decoration:underLine; text-shadow: none;}
+.cs177 {
+/* '굴림' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs178 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:14.00pt; letter-spacing:-0.16em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs179 {
+/* '굴림체' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:0.00em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs180 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs181 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs182 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.11em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs183 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.12em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs184 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.14em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs185 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:15.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs186 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.18em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs187 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.03em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs188 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.17em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs189 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.31em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs190 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.16em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs191 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.21em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs192 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.25em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs193 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:11.00pt; letter-spacing:-0.19em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs194 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.06em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs195 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.19em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs196 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.20em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs197 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.12em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs198 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.15em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs199 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.09em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs200 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.07em; font-style:normal; font-weight:bold; color:#000000; text-shadow: none;}
+.cs201 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.11em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs202 {
+/* '휴먼명조' */
+ font-family:'HWPserif'; font-size:13.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs203 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.04em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs204 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.08em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+.cs205 {
+/* '한양중고딕' */
+ font-family:'HWPsansserif'; font-size:12.00pt; letter-spacing:-0.09em; font-style:normal; font-weight:normal; color:#000000; text-shadow: none;}
+div, p { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=);  }
+</style>
+<style>
+v\:image{ behavior:url(#default#VML);display:inline-block;position:absolute;left:0px;top:0px;}
+v\:imagedata{ behavior:url(#default#VML);}
+v\:stroke { behavior:url(#default#VML);}
+v\:fill { behavior:url(#default#VML);}
+v\:rect { behavior:url(#default#VML);display:inline-block;position:absolute;left:0px;top:0px; }
+v\:oval { behavior:url(#default#VML);display:inline-block;position:absolute;left:0px;top:0px; }
+v\:group { behavior:url(#default#VML);display:inline-block;}
+v\:polyline { behavior:url(#default#VML);inline-block;position:absolute;left:0px;top:0px;}
+v\:shape { behavior:url(#default#VML);display:inline-block;position:absolute;left:0px;top:0px;background:transparent;width:100%;height:100%;}
+v\:path { behavior:url(#default#VML);display:inline-block;position:absolute;left:0px;top:0px;}
+o\:* { behavior:url(#default#VML);display:inline-block;}
+</style>
+</head>
+<body style=" padding:0; margin:auto; word-break:break-all; -webkit-text-size-adjust:none;">
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps59 cs89" style=" margin:0.00pt 2.08% 0.00pt 0.00%;"><br></p>
+<p class="ps59 cs89" style=" margin:0.00pt 2.08% 0.00pt 0.00%;"><br></p>
+<p class="ps59 cs89" style=" margin:0.00pt 2.08% 0.00pt 0.00%;">천안시 노인복지 지역상생형<span style=" letter-spacing:-0.07em; color:#315F97;"></span></p>
+<p class="ps101 cs91" style="">대학생 사업연계 제안요청서</p>
+<div style="position:relative; ">
+<div style="position:absolute; left:0.00%; top:4.41pt; z-index:38; border:solid #CCFFFF 1.00px; background:-webkit-linear-gradient(left , #000080, #99CCFF); width:100.00%; min-height:4.67pt;">
+<!--[if lt IE 9]><v:shape style="z-index:-1;" coordsize="48370,467"  strokecolor="#CCFFFF" strokeweight="1.00px" path="m0,0 l48370,0 l48370,467 l0,467  e" >
+<v:stroke dashstyle="solid" />
+<v:fill type="gradient" color="#99CCFF" color2="#000080" angle="90" focus="0%" method="sigma" />
+</v:shape><![endif]-->
+<svg style="z-index:-1; position:absolute; left:0; top:0; background:transparent; width:100%; height:100%;" preserveAspectRatio="none" viewBox="0 0 48370 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+<path d=" M0,0 L48370,0 L48370,467 L0,467 z " style="stroke:#CCFFFF;stroke-width:82;fill:url(#grad1);"></path>
+<defs>
+<lineargradient id="grad1" spreadMethod="reflect" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style="stop-color:#000080;"></stop>
+<stop offset="100%" style="stop-color:#99CCFF;"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<p class="ps81 cs92" style=""><br></p>
+<p class="ps81 cs93" style=""><br></p>
+<p class="ps81 cs93" style=""><br></p>
+<p class="ps81 cs93" style=""><br></p>
+<div class="ps81 cs94" style=""><table style="width:92.36%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:13;">
+<colgroup>
+<col style="width:68.02pt;"><col style="width:377.05pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:50.13pt;">
+<p class="ps7 cs95" style=" line-height:100%;">사 업 명</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:50.13pt;">
+<p class="ps59 cs96" style=" line-height:100%; margin:0.00pt 2.65% 0.00pt 0.00%;">천안시 고령층 이동권 신규 제안 <br>(Call Map)<span style=" color:#0059FF;"></span></p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:44.30pt;">
+<p class="ps7 cs95" style="">주관</p>
+<!--p class="ps7 cs95" style="">교육청</p-->
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:44.30pt;">
+<p class="ps7 cs98" style=" line-height:100%;">천안시복지재단</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:52.83pt;">
+<p class="ps3 cs99" style=" line-height:100%;">담당부서</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:52.83pt;">
+<p class="ps102 cs100" style="">천안시복지재단 이사장 정지표</p>
+<p class="ps102 cs101" style="">(TEL <a href="tel:044-320-3417" target="_blank">041)903-4479~4480</a>, FAX 041)903-4481)</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps82 cs102" style=" margin:0.00pt 0.00% 0.00pt 3.11%;"><br></p>
+<p class="ps3 cs103" style=""><br></p>
+<p class="ps3 cs103" style=""><br></p>
+<p class="ps3 cs103" style="">2022. 11.</p>
+<p class="ps81 cs93" style=""><br></p>
+<p class="ps81 cs93" style=""><br></p>
+<div class="ps50 cs104" style=""><div style="position:relative;vertical-align:text-bottom; display:inline-block; margin:0.00pt; z-index:14; width:33.68%;">
+<div style="position:relative; border:solid transparent 1px; width:100%;">
+<div style="margin-top:25.07%;line-height:100%;font-size:1pt;">&nbsp;</div>
+<!--[if lt IE 9]><v:shape style="z-index:-1;rotation:0;width:100.00%;height:100.00%;left:0.00%;top:0.00%" coordsize="16231 4068" path="m0,0 l16231,0 l16231,4068 l0,4068 x e"  stroked="false" >
+<v:imagedata src="bindatas/BIN0001.bmp"  cropright="0.00" /></v:shape>
+<![endif]-->
+<!--svg style="z-index:-1;overflow:hidden;position:absolute;left:0;top:0;background:transparent;width:100%;height:100%;" preserveAspectRatio="none" viewBox="0 0 16231 4069" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"-->
+<img src="chmark.png" alt="" style="align-items:center; text-align:center; margin-left: -85%;">
+<defs>
+</defs>
+<rect x="0" y="0" width="16231" height="4068" style="stroke:none;fill:url(#pat1);"></rect>
+</svg>
+</div></div></div>
+<p class="ps50 cs105" style="">[ 천 안 시 복 지 재 단 ]</p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<div class="ps115 cs106" style=""><table style="width:91.78%;vertical-align:text-bottom; display:inline-block; margin-top:2.83pt; margin-right:0.00pt; margin-bottom:2.83pt; margin-left:0.00pt; z-index:15;">
+<colgroup>
+<col style="width:442.28pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #800080 1.00px; border-left:none #800080 1.00px; border-right:none #800080 1.00px; border-bottom:double #800080 5.67px; padding:1.41pt; height:68.75pt;">
+<p class="ps59 cs89" style=" margin:0.00pt 2.26% 0.00pt 0.00%;">천안시노인복지 지역상생형 사업연계 요청서</p>
+<p class="ps116 cs126" style="">제안요청서</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps97 cs79" style="">□ 사업 개요<span style=" font-size:20.00pt; line-height:160.00%;"></span></p>
+<p class="ps20 cs10" style=""><br></p>
+<p class="ps96 cs78" style=" margin:0.00pt 0.00% 0.00pt 1.56%;">◦ 추진목적</p>
+<p class="ps133 cs78" style=" text-indent:0.02%; margin:0.00pt 0.00% 0.00pt 6.21%;"><span style=" letter-spacing:-0.02em;">천안시노인복지과에 고령층 이동권에 관련하여 천안시와 사업연계 및 지역상생형 프로젝트를 제시.</span></p>
+<p class="ps98 cs78" style=" margin:0.00pt 0.00% 0.00pt 1.56%;">◦ 추진배경 <span style=" font-weight:normal;"></span></p>
+<p class="ps134 cs11" style=" text-indent:-3.14%; margin:0.00pt 0.00% 0.00pt 7.80%;">-  <span style="font-weight:bold;">천안시 고령층 이동권 신규 제안</span>은 천안시 <span style="font-weight:bold;">고령층의 대중교통 이용시,</span> 현재 기존에 출시 되어 있는 <span style="font-weight:bold;">네비게이션 어플(카카오맵, 티맵)</span>등이 <span style="font-weight:bold;">고령층의 원활환 어플 사용에 어려움</span>이 있을 것이라 판단, 사업을 제시하게 됨.</p>
+<p class="ps135 cs11" style=" text-indent:-2.64%; margin:0.00pt 0.00% 0.00pt 7.31%;">-  <span style="font-weight:bold;">Call Map</span>은 백석대학교에서 천안시에 제시할 <span style="font-weight:bold;">사업연계/지역상생형 프로젝트</span>의 이름으로 써, <span style="font-weight:bold;">기존의 네비게이션 어플들과 달리</span> 고령층의 니즈를 파악하고 <span style="font-weight:bold;">개선, re-design</span> 함으로 써 간편한 <span style="font-weight:bold;">UI</span>디자인으로 타겟 사용자층의 <span style="font-weight:bold;">UX</span>를 높여 원활한 어플 사용이 가능 하도록 <span style="font-weight:bold;">새로운 어플 및 디자인을 제공.</span></p>
+<p class="ps131 cs11" style=" text-indent:-2.72%; margin:0.00pt 0.00% 0.00pt 7.39%;">-  이러한 <span style=" font-weight:bold;">과제를 원활히 수행</span>하고 <span style=" font-weight:bold;">천안시 고령층의 대중교통 이용시 효율적인 길찾기 어플을 만들기</span> 위한 천안시노인복지재단의 역할은 <span style=" font-weight:bold;">고령층의 원활환 대중교통 이용 및 이동권을 위해 반드시 필요</span></p>
+<p class="ps96 cs11" style=" margin:0.00pt 0.00% 0.00pt 1.56%;"><br></p>
+<p class="ps136 cs78" style=" text-indent:-5.45%; margin:0.00pt 0.00% 0.00pt 7.01%;">◦ 천안시노인복지재단<span style=" font-weight:normal;">은 해당 아이디어/어플(Call Map)의 투자·선정·운영을 </span>검토<span style=" font-weight:normal;"> 하고 백석대학교로 부터 위임을 받아 운영 하는</span> 천안시 복지재단의 역할 수행</p>
+<p class="ps132 cs78" style=" text-indent:-6.93%; margin:0.00pt 0.00% 0.00pt 6.93%;"><br></p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps97 cs79" style="">□ 지정기관 주요 업무<span style=" font-family:&#39;HWPserif&#39;;"></span></p>
+<p class="ps21 cs12" style=" text-indent:0.00%; margin:0.00pt 0.00% 0.00pt 1.39%;"><span style=" letter-spacing:0.00em; font-weight:bold;">◦</span> 부처 및 교육청 단위의 학교공간혁신사업 <span style=" font-weight:bold;">추진단 업무 지원</span></p>
+<p class="ps99 cs77" style=" text-indent:-2.95%; margin:0.00pt 0.00% 0.00pt 7.30%;"><span style=" color:#000000;">-  관계 부처 및 교육청, 총괄기획가와의 주요 정책 및 제도 마련을 위한 업무 지원 </span></p>
+<p class="ps22 cs132" style=" margin:0.00pt 0.00% 0.00pt 1.39%;"><span style=" letter-spacing:0.00em; font-weight:bold;">◦</span> 교<span style=" letter-spacing:-0.08em;">육청</span><span style=" letter-spacing:-0.04em;"> </span><span style=" letter-spacing:-0.04em; font-weight:bold;">학교공간혁신사업 추진 지원</span></p>
+<p class="ps99 cs83" style=" margin:0.00pt 0.00% 0.00pt 4.36%;">-  교육청 내 학교단위 학교공간혁신사업 추진 업무 지원</p>
+<p class="ps99 cs83" style=" margin:0.00pt 0.00% 0.00pt 4.36%;">-  학교공간혁신 촉진자 업무 연계 및 지원 </p>
+<p class="ps137 cs132" style=" text-indent:-4.76%; margin:0.00pt 0.00% 0.00pt 6.15%;"><span style=" letter-spacing:0.00em; font-weight:bold;">◦</span> <span style=" letter-spacing:-0.10em;">사용자 참여설계 </span><span style=" letter-spacing:-0.10em; font-weight:bold;">주체</span><span style=" font-size:13.00pt; line-height:160.00%; letter-spacing:-0.10em;">(교사, 퍼실리테이트, 업무담당자(시설, 계약, 감사 등))</span><span style=" letter-spacing:-0.10em;">에 대한</span> 교육·연수지원 및 기술자문</p>
+<p class="ps22 cs132" style=" margin:0.00pt 0.00% 0.00pt 1.39%;"><span style=" letter-spacing:0.00em; font-weight:bold;">◦ </span>학교공간혁신사업 홍보 및 정보교환을 위한 <span style=" font-weight:bold;">홈페이지 제작 및 운영</span></p>
+<p class="ps22 cs132" style=" margin:0.00pt 0.00% 0.00pt 1.39%;"><span style=" letter-spacing:0.00em; font-weight:bold;">◦</span> 학교공간혁신사업 및 학교시설 개선을 위한 <span style=" font-weight:bold;">정책연구 수행</span></p>
+<p class="ps138 cs83" style=" text-indent:-2.61%; margin:0.00pt 0.00% 0.00pt 6.96%;">-  학교공간혁신을 위한 다양한 정책 및 제도적 기반 마련을 위한 기초연구 추진 및 관리 </p>
+<p class="ps22 cs132" style=" margin:0.00pt 0.00% 0.00pt 1.39%;"><span style=" letter-spacing:0.00em; font-weight:bold;">◦</span> 학교공간혁신사업 <span style=" font-weight:bold;">사후평가 및 우수모델 발굴</span><span style=" font-size:14.00pt; line-height:160.00%; letter-spacing:0.00em;"></span></p>
+<p class="ps99 cs83" style=" margin:0.00pt 0.00% 0.00pt 4.36%;">-  우수 사례 발굴 및 홍보 <span style=" font-size:15.00pt; line-height:160.00%; letter-spacing:-0.06em; font-weight:bold;"></span></p>
+<p class="ps97 cs141" style=" text-indent:-6.59%; margin:0.00pt 0.00% 0.00pt 6.59%;"><br></p>
+<p class="ps97 cs141" style="">□ 지정기관 개요<span style=" font-family:&#39;HWPserif&#39;; letter-spacing:-0.06em; font-weight:normal;"></span></p>
+<p class="ps98 cs132" style=" margin:0.00pt 0.00% 0.00pt 1.39%;"><span style=" letter-spacing:0.00em;">◦ 과업명 : 학교공간혁신사업 지원을 위한 전문지원기관 운영</span><span style=" font-size:13.00pt; line-height:160.00%; letter-spacing:0.00em;"></span></p>
+<p class="ps98 cs132" style=" margin:0.00pt 0.00% 0.00pt 1.39%;">◦ 지정기간 : ’19. 6. 1. ~ ’20. 3. 31</p>
+<p class="ps23 cs143" style=" margin:0.00pt 0.00% 0.00pt 4.05%;">※ 지정기간 만료 30일 전까지 지정기간 연장 또는 재공고 여부 결정</p>
+<p class="ps98 cs129" style=" margin:0.00pt 0.00% 0.00pt 1.56%;">◦ 사업예산 : 6억 이내<span style=" font-size:13.00pt; line-height:160.00%;">(신청기관에서 자유롭게 책정할 수 있음)</span></p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps100 cs141" style="">□ 지원기관 공고개요<span style=" font-family:&#39;HWPserif&#39;; font-size:20.00pt; line-height:160.00%;"></span></p>
+<p class="ps117 cs129" style=" margin:0.00pt 0.00% 0.00pt 3.11%;">◦ 공고지원 대상<span style=" font-family:&#39;HWPsansserif&#39;;"></span></p>
+<p class="ps118 cs129" style=" margin:0.00pt 0.00% 0.00pt 4.50%;"><span style=" letter-spacing:-0.06em;">- 「</span><span style=" letter-spacing:-0.12em;">정부출연연구기관 등의 설립‧운영 및 육성에 관한 법률」에 따른 연구기관</span></p>
+<p class="ps139 cs132" style=" margin:0.00pt 0.00% 0.00pt 4.17%;">-  <span style=" letter-spacing:-0.14em;">사용자 참여설계 및 교육과정에 관한 전문성이 있는 학회, 연구기관 또는 대학</span></p>
+<p class="ps117 cs132" style=" margin:0.00pt 0.00% 0.00pt 2.78%;"><span style=" letter-spacing:0.00em;">◦</span><span style=" letter-spacing:0.00em;"> 사업자 선정</span></p>
+<p class="ps140 cs145" style=" text-indent:-0.91%; margin:0.00pt 0.00% 0.00pt 5.41%;"><span style=" letter-spacing:-0.06em;">- 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」제43조의 규정에 따른 협상에 의한 계약을 실시하여 선정</span></p>
+<p class="ps141 cs147" style=" text-indent:-2.48%; margin:0.00pt 0.00% 0.00pt 6.65%;">-  제안서 심사결과 평가점수가 70점 이상의 업체 중 최고점수를 받은 1순위<span style=" letter-spacing:-0.08em;">자부터 협상하여 합의된 자를 계약대상자로 선정하며, 1순위자와 협상이</span> 결렬될 경우 차순위와 협상을 통해 계약대상자를 선정</p>
+<p class="ps119 cs145" style=" margin:0.00pt 0.00% 0.00pt 3.11%;">◦ 선정절차</p>
+<p class="ps120 cs145" style=" margin:0.00pt 0.00% 0.00pt 6.06%;"><span style=" letter-spacing:-0.06em;">-  공      고 : 지정정보처리장치(조달청 나라장터- G2B)</span></p>
+<p class="ps120 cs147" style=" margin:0.00pt 0.00% 0.00pt 5.56%;">-  제안서접수 : 제안서 제출로 갈음(직접 제출)</p>
+<p class="ps121 cs147" style=" margin:0.00pt 0.00% 0.00pt 5.56%;">-  제안서심사 : 평가위원회 구성(세종특별자치시교육청 자체구성), 평가</p>
+<p class="ps142 cs147" style=" text-indent:-2.65%; margin:0.00pt 0.00% 0.00pt 8.21%;">-  낙찰자 결정 : 제안서 평가 결과 70점 이상인자 중 1순위자와 협상을 통해 결정(협상이 결렬될 경우 차순위와 협상함)</p>
+<p class="ps143 cs147" style=" text-indent:-2.35%; margin:0.00pt 0.00% 0.00pt 7.91%;">-  합산점수가 동일한 제안자가 2인 이상일 경우에는 기술능력 평가점수가 높은 제안자를 선순위자로 하고, 기술능력 평가점수도 동일한 경우에는 추첨으로 정한다.</p>
+<p class="ps144 cs129" style=" text-indent:0.00%; margin:0.00pt 0.00% 0.00pt 6.06%;"><span style=" letter-spacing:-0.06em;">-  평가기준 : [별표1] '제안서 평가 항목 및 배점기준표’ 참고 </span></p>
+<p class="ps119 cs145" style=" margin:0.00pt 0.00% 0.00pt 1.56%;">◦ 기타 궁금한 사항은 담당자에게 문의바람 </p>
+<p class="ps22 cs145" style=" margin:0.00pt 0.00% 0.00pt 6.06%;"><span style=" letter-spacing:-0.06em;">-  담당자 : 세종특별자치시교육청 교육시설과 (☎044- 320- 3417)</span></p>
+<p class="ps22 cs147" style=" text-indent:-6.62%; margin:0.00pt 0.00% 0.00pt 6.62%;"><br></p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps24 cs145" style=" margin:0.00pt 0.00% 0.00pt 1.56%;"><span style=" font-family:&#39;HWPsansserif&#39;; font-size:14.00pt; line-height:160.00%; font-weight:bold;">[별표1] ￭ 제안서 평가 항목 및 배점기준표</span></p>
+<div class="ps18 cs149" style=" margin:0.00pt 0.00% 0.00pt 0.01%;"><table style="width:99.62%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:7;">
+<colgroup>
+<col style="width:32.98pt;"><col style="width:32.05pt;"><col style="width:54.70pt;"><col style="width:182.97pt;"><col style="width:35.46pt;"><col style="width:28.38pt;"><col style="width:28.38pt;"><col style="width:28.38pt;"><col style="width:28.38pt;"><col style="width:28.33pt;">
+</colgroup>
+<tbody><tr>
+<td rowspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:27.66pt;">
+<p class="ps101 cs28" style=" line-height:100%;">구분</p>
+</td>
+<td rowspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:27.66pt;">
+<p class="ps101 cs28" style=" line-height:100%;">평가항목</p>
+</td>
+<td colspan="2" rowspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:27.66pt;">
+<p class="ps101 cs28" style=" line-height:100%;">평가내용</p>
+</td>
+<td rowspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:27.66pt;">
+<p class="ps101 cs28" style=" line-height:100%;">배점</p>
+</td>
+<td colspan="5" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:11.00pt;">
+<p class="ps101 cs28" style=" line-height:100%;">배점기준</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:11.00pt;">
+<p class="ps101 cs28" style=" line-height:100%;">A</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:11.00pt;">
+<p class="ps101 cs28" style=" line-height:100%;">B</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:11.00pt;">
+<p class="ps101 cs28" style=" line-height:100%;">C</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:11.00pt;">
+<p class="ps101 cs28" style=" line-height:100%;">D</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#DCE5FC; height:11.00pt;">
+<p class="ps101 cs28" style=" line-height:100%;">E</p>
+</td>
+</tr>
+<tr>
+<td rowspan="5" style=" border-top:double #000000 1.89px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:170.45pt;">
+<p class="ps101 cs84" style="">정량적</p>
+<p class="ps101 cs84" style="">평가</p>
+<p class="ps101 cs84" style="">(20점)</p>
+</td>
+<td rowspan="4" style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:148.72pt;">
+<p class="ps101 cs84" style=" line-height:100%;">일반현황</p>
+</td>
+<td rowspan="2" style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:60.28pt;">
+<p class="ps101 cs84" style="">전문역량 및 수행</p>
+<p class="ps101 cs84" style="">실적</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps145 cs84" style=" line-height:100%; text-indent:-5.35%; margin:0.00pt 0.00% 0.00pt 5.35%;">‧ 관련 분야 전문 역량(공인 기관) 실적 평가</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">5</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">5</p>
+</td>
+<td colspan="3" style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">- </p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps146 cs84" style=" line-height:100%; text-indent:-4.29%; margin:0.00pt 0.00% 0.00pt 4.29%;">‧ <span style=" letter-spacing:-0.06em;">최근 5년간 공공기관 발주 연구용</span>역수행 실적</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">9</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">9</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">8.1</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">7.2</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">6.3</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:27.31pt;">
+<p class="ps101 cs84" style=" line-height:100%;">5.4</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps101 cs84" style=" line-height:100%;">신용평가등급</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps147 cs33" style=" text-indent:-3.55%; margin:0.00pt 0.00% 0.00pt 3.55%;">‧ <span style=" letter-spacing:-0.18em;">행정안전부장관이 지정한 신용정보업자</span>가 발급하는 신용평가등급확인서로 평가</p>
+<p class="ps148 cs33" style=" text-indent:-4.07%; margin:0.00pt 0.00% 0.00pt 4.07%;">‧ 최근1년 이내  회사채기업어음에 대한 신용평가등급 또는 기업어음신용평가등급 중 가장 최근의 신용평가 등급<span style=" letter-spacing:-0.12em;"></span></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.7</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.4</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.1</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:61.05pt;">
+<p class="ps101 cs84" style=" line-height:100%;">1.8</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">신인도</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps49 cs84" style=" line-height:100%;">‧ 최근 3년이내 입찰자격 제한 기간</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.7</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.4</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.1</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">1.8</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">소계</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">20</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">20</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">13.5</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">12</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">10.5</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:double #000000 1.89px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:16.07pt;">
+<p class="ps101 cs84" style=" line-height:100%;">12</p>
+</td>
+</tr>
+<tr>
+<td rowspan="6" style=" border-top:double #000000 1.89px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:274.89pt;">
+<p class="ps50 cs84" style="">정성적</p>
+<p class="ps50 cs84" style="">평가</p>
+<p class="ps50 cs84" style="">(60점)</p>
+</td>
+<td rowspan="3" style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:148.07pt;">
+<p class="ps50 cs84" style="">사업</p>
+<p class="ps50 cs84" style="">수행계획</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps50 cs84" style=" line-height:100%;">사업수행이해도</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps49 cs34" style="">‧ <span style=" letter-spacing:-0.17em;">추진목표 및 방향에 대한 구체성, 명확성</span></p>
+<p class="ps49 cs34" style="">‧ 수행사업에 대한 이해도 </p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps50 cs84" style=" line-height:100%;">15</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps51 cs84" style=" line-height:100%;">15</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps51 cs84" style=" line-height:100%;">12.5</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps51 cs84" style=" line-height:100%;">10</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps51 cs84" style=" line-height:100%;">7.5</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:47.29pt;">
+<p class="ps51 cs84" style=" line-height:100%;">5</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps50 cs35" style=" line-height:100%;">추진과정의<span style=" letter-spacing:0.00em;"> 구체성 및 타당성</span></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps149 cs34" style=" text-indent:-4.91%; margin:0.00pt 0.00% 0.00pt 4.91%;">‧ 제안서에 제시된 구체적 추진과정의 제시 여부</p>
+<p class="ps52 cs34" style="">‧ 타당한 추진계획 여부</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps50 cs84" style=" line-height:100%;">15</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps51 cs84" style=" line-height:100%;">15</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps51 cs84" style=" line-height:100%;">12.5</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps51 cs84" style=" line-height:100%;">10</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps51 cs84" style=" line-height:100%;">7.5</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps51 cs84" style=" line-height:100%;">5</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps50 cs84" style=" line-height:100%;">사업관리 실효성</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps48 cs34" style="">‧ 원활한 커뮤니케이션 유지방안</p>
+<p class="ps48 cs34" style="">‧ 결과 도출의 공정성 및 합리성</p>
+<p class="ps150 cs34" style=" text-indent:-4.75%; margin:0.00pt 0.00% 0.00pt 4.75%;">‧ 결과 활용 및 피드백 등 향후 사업 추진 비젼 제시 가능 여부</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps101 cs84" style=" line-height:100%;">10</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps101 cs84" style=" line-height:100%;">10</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps101 cs84" style=" line-height:100%;">9</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps101 cs84" style=" line-height:100%;">8</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps101 cs84" style=" line-height:100%;">7</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:49.81pt;">
+<p class="ps101 cs84" style=" line-height:100%;">6</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:83.87pt;">
+<p class="ps50 cs84" style=" line-height:100%;">기술 및 지식능력</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps50 cs84" style=" line-height:100%;">참여인력 적정성</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps49 cs34" style="">‧ 참여인력의 전문성</p>
+<p class="ps52 cs34" style="">‧ 참여인력의 적정성</p>
+<p class="ps52 cs34" style="">‧ 조직 및 지원체계의 적절성</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps50 cs84" style=" line-height:100%;">15</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps51 cs84" style=" line-height:100%;">15</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps51 cs84" style=" line-height:100%;">12.5</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps51 cs84" style=" line-height:100%;">10</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps51 cs84" style=" line-height:100%;">7.5</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:38.56pt;">
+<p class="ps51 cs84" style=" line-height:100%;">5</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps50 cs36" style=" line-height:100%;">제안요청서<span style=" letter-spacing:-0.15em;">와의 부합성</span></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps49 cs34" style="">‧ 제안요청서의 정확한 인지 정도</p>
+<p class="ps151 cs34" style=" text-indent:-4.91%; margin:0.00pt 0.00% 0.00pt 4.91%;">‧ 제안요청서에서 요구한 사항에 대한 부합정도</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps101 cs84" style=" line-height:100%;">5</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps101 cs84" style=" line-height:100%;">5</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps101 cs84" style=" line-height:100%;">4.5</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps101 cs84" style=" line-height:100%;">4</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3.5</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:39.65pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:31.63pt;">
+<p class="ps50 cs84" style=" line-height:100%;">소계</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:31.63pt;">
+<p class="ps50 cs84" style=" line-height:100%;">60</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:31.63pt;">
+<p class="ps51 cs84" style=" line-height:100%;">60</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:31.63pt;">
+<p class="ps51 cs84" style=" line-height:100%;">51</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:31.63pt;">
+<p class="ps51 cs84" style=" line-height:100%;">42</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:31.63pt;">
+<p class="ps51 cs84" style=" line-height:100%;">33</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:31.63pt;">
+<p class="ps51 cs84" style=" line-height:100%;">24</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:66.11pt;">
+<p class="ps50 cs84" style="">가격평가</p>
+<p class="ps50 cs84" style="">(20점)</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:36.12pt;">
+<p class="ps50 cs84" style=" line-height:100%;">가격평가</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:36.12pt;">
+<p class="ps50 cs84" style=" line-height:100%;">입찰가격평가</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:36.12pt;">
+<p class="ps48 cs84" style=" line-height:100%;">‧ <span style=" letter-spacing:-0.25em;">지방자치단</span><span style=" letter-spacing:-0.31em;">체 협상에 의한 계약체결 가준 적용</span></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt; height:36.12pt;">
+<p class="ps50 cs84" style=" line-height:100%;">20</p>
+</td>
+<td colspan="5" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt; height:36.12pt;">
+<p class="ps51 cs84" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:24.33pt;">
+<p class="ps50 cs84" style=" line-height:100%;">소계</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:24.33pt;">
+<p class="ps50 cs84" style=" line-height:100%;">20</p>
+</td>
+<td colspan="5" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:2.83pt 1.42pt;z-index:-1; background-color:#E0EED1; height:24.33pt;">
+<p class="ps51 cs84" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td colspan="4" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:2.83pt 1.42pt;z-index:-1; background-color:#F4DDED; height:24.16pt;">
+<p class="ps50 cs39" style=" line-height:100%;">합   계</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:2.83pt 1.42pt;z-index:-1; background-color:#F4DDED; height:24.16pt;">
+<p class="ps50 cs39" style=" line-height:100%;">100</p>
+</td>
+<td colspan="5" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:2.83pt 1.42pt;z-index:-1; background-color:#F4DDED; height:24.16pt;">
+<p class="ps51 cs40" style=" line-height:100%;"></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps17 cs150" style=" text-indent:-9.42%; margin:0.00pt 0.00% 0.00pt 9.42%;"><br></p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps17 cs150" style=" margin:0.00pt 0.00% 0.00pt 3.74%;">1) 전문 역량(공인 기관) 실적</p>
+<div class="ps87 cs151" style=" margin:0.00pt 0.00% 0.00pt 5.40%;"><span style=" font-weight:bold;"><table style="width:98.32%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:12;">
+<colgroup>
+<col style="width:86.77pt;"><col style="width:180.74pt;"><col style="width:180.73pt;">
+</colgroup>
+<tbody><tr>
+<td rowspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:double #000000 1.89px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:39.12pt;">
+<p class="ps102 cs80" style=" line-height:100%;">구   분</p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.51px; border-left:double #000000 1.89px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps3 cs80" style=" line-height:100%;">해당 기관의 전문 역량(공인 기관) 실적 여부</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:double #000000 1.89px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:22.52pt;">
+<p class="ps88 cs82" style=" line-height:100%;">국가 공인 평가기관 또는 인증기관으로 실적이 있는 경우</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:25.32pt;">
+<p class="ps8 cs82" style=" line-height:100%;">공인 평가(인증)기관 실적이 없는 경우</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.51px; border-right:double #000000 1.89px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps102 cs80" style=" line-height:100%;">배   점</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:double #000000 1.89px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps102 cs82" style=" line-height:100%;">5</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps102 cs82" style=" line-height:100%;">3</p>
+</td>
+</tr>
+</tbody></table>
+</span></div>
+<p class="ps152 cs152" style=" text-indent:-3.61%; margin:0.00pt 0.00% 0.00pt 8.80%;"><span style=" font-size:11.00pt; line-height:180.00%;"></span><span style=" font-size:11.00pt; line-height:180.00%;">※ 국가 공인 평가(인증)기관이라 함은 공고일 기준 국가기관에서 지정한 기관으로 관련 업무 수행 실적(역량)에 대해 평가</span><span style=" font-size:12.00pt; line-height:180.00%; font-weight:bold;"></span></p>
+<p class="ps17 cs150" style=" margin:0.00pt 0.00% 0.00pt 3.74%;">2) 수행실적</p>
+<div class="ps87 cs151" style=" margin:0.00pt 0.00% 0.00pt 5.40%;"><span style=" font-weight:bold;"><table style="width:98.33%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:10;">
+<colgroup>
+<col style="width:86.77pt;"><col style="width:72.30pt;"><col style="width:72.30pt;"><col style="width:72.30pt;"><col style="width:72.30pt;"><col style="width:72.30pt;">
+</colgroup>
+<tbody><tr>
+<td rowspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:double #000000 1.89px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:24.80pt;">
+<p class="ps102 cs80" style=" line-height:100%;">구   분</p>
+</td>
+<td colspan="5" style=" border-top:solid #000000 1.51px; border-left:double #000000 1.89px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps3 cs80" style=" line-height:100%;">해당 기관에서 수행한 연구 용역 실적 합계</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:double #000000 1.89px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">12건 이상</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">9~11건</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">6~8건</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">3~5건</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">2건 이하</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.51px; border-right:double #000000 1.89px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps102 cs80" style=" line-height:100%;">배   점</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:double #000000 1.89px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">9</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">8.1</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">7.2</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">6.3</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">5.4</p>
+</td>
+</tr>
+</tbody></table>
+</span></div>
+<p class="ps160 cs152" style=" text-indent:-3.54%; margin:0.00pt 0.00% 0.00pt 8.73%;"><span style=" font-size:11.00pt; line-height:160.00%;"></span><span style=" font-size:11.00pt; line-height:160.00%;">※ 유사</span><span style=" font-size:11.00pt; line-height:160.00%; letter-spacing:-0.03em;">용역이라 함은 공고일 기준 최근 5년간 공공기관이 발주한 교육시설정책 또는 시설</span><span style=" font-size:11.00pt; line-height:160.00%;">관련 연구에 참여하여 완료한 건수[발주기관의 실적증명서로 증빙]</span></p>
+<p class="ps161 cs154" style=" text-indent:-8.73%; margin:0.00pt 0.00% -2.20pt 8.73%;"><br></p>
+<p class="ps87 cs150" style=" margin:0.00pt 0.00% 0.00pt 3.74%;">3) 신용평가 등급</p>
+<div class="ps87 cs151" style=" margin:0.00pt 0.00% 0.00pt 5.40%;"><table style="width:98.34%;vertical-align:text-bottom; display:inline-block; margin-top:1.41pt; margin-right:0.00pt; margin-bottom:1.41pt; margin-left:0.00pt; z-index:11;">
+<colgroup>
+<col style="width:85.98pt;"><col style="width:80.24pt;"><col style="width:231.35pt;"><col style="width:50.78pt;">
+</colgroup>
+<tbody><tr>
+<td colspan="4" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.51px; border-bottom:double #000000 1.00px; padding:1.41pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">신용평가등급</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:double #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.41pt;z-index:-1; background-color:#F2F2F2; height:24.20pt;">
+<p class="ps89 cs76" style="">회사채에 대한</p>
+<p class="ps89 cs76" style="">신용평가등급</p>
+</td>
+<td style=" border-top:double #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.41pt;z-index:-1; background-color:#F2F2F2; height:24.20pt;">
+<p class="ps89 cs76" style="">기업어음에 대한</p>
+<p class="ps89 cs76" style="">신용평가등급</p>
+</td>
+<td style=" border-top:double #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.41pt;z-index:-1; background-color:#F2F2F2; height:24.20pt;">
+<p class="ps89 cs76" style=" line-height:100%;">기업신용평가등급</p>
+</td>
+<td style=" border-top:double #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:double #000000 1.89px; padding:1.41pt;z-index:-1; background-color:#F2F2F2; height:24.20pt;">
+<p class="ps89 cs76" style=" line-height:100%;">평 점</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">AAA</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 AAA에 준하는 등급</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">AA+, AA0, AA- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A1</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps153 cs46" style=" line-height:100%;">회사<span style=" letter-spacing:-0.21em;">채에</span><span style=" letter-spacing:-0.25em;"> 대한 신용평가등급 AA+, AA°, AA- 에 준하는 등급</span></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A+</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A2+</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 A+에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A°</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A2°</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 A°에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A2- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 A- 에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">BBB+</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A3+</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 BBB+에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">BBB°</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A3°</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 BBB°에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">BBB- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">A3- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 BBB- 에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">3.0</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">BB+, BB°</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">B+</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 BB+, BB°에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">2.7</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">BB- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">B°</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 BB- 에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">2.4</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">B+, B°, B- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">B- </p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회<span style=" letter-spacing:-0.19em;">사채에 대한 신용평가등급 B+, B°, B- 에 준하는 등급</span></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">2.1</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">CCC+ 이하</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">C 이하</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;">회사채에 대한 신용평가등급 CCC+에 준하는 등급</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">1.5</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">없음</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs80" style=" line-height:100%;">없음</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs46" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.41pt; height:11.00pt;">
+<p class="ps89 cs82" style=" line-height:100%;">0.0</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps159 cs150" style=" margin:0.00pt 0.00% 0.00pt 3.74%;">4) 신인도</p>
+<div class="ps162 cs151" style=" margin:0.00pt 0.00% 0.00pt 4.05%;"><span style=" font-weight:bold;"><table style="width:98.30%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:36;">
+<colgroup>
+<col style="width:86.77pt;"><col style="width:73.55pt;"><col style="width:73.55pt;"><col style="width:73.55pt;"><col style="width:73.55pt;"><col style="width:73.55pt;">
+</colgroup>
+<tbody><tr>
+<td rowspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:double #000000 1.89px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:24.80pt;">
+<p class="ps102 cs80" style=" line-height:100%;">구   분</p>
+</td>
+<td colspan="5" style=" border-top:solid #000000 1.51px; border-left:double #000000 1.89px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps3 cs80" style=" line-height:100%;">입찰참가자격 제한을 받은기간 합계</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:double #000000 1.89px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">미제한</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">1월</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">2월</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">3월</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:double #000000 1.89px; padding:1.40pt;z-index:-1; background-color:#F2F2F2; height:11.00pt;">
+<p class="ps2 cs82" style=" line-height:100%;">4월이상</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.51px; border-right:double #000000 1.89px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps102 cs80" style=" line-height:100%;">배   점</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:double #000000 1.89px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">3</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.7</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.4</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">2.1</p>
+</td>
+<td style=" border-top:double #000000 1.89px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:11.00pt;">
+<p class="ps101 cs84" style=" line-height:100%;">1.8</p>
+</td>
+</tr>
+</tbody></table>
+</span></div>
+<p class="ps154 cs153" style=" text-indent:-2.43%; margin:0.00pt 0.00% 0.00pt 8.14%;">-  최근 3년 이내 관계법령에 따라 입찰참가자격 제한을 받은 기간을 합산하여 합산기간 1개월 마다 0.3점씩 감점(1월 미만인 경우 1개월로 계산)<span style=" font-size:13.00pt; line-height:180.00%;"></span></p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps53 cs148" style="">[별표2, 제안서 작성요령] <span style=" font-size:13.00pt; line-height:160.00%;"></span></p>
+<p class="ps54 cs156" style=" margin:0.00pt 0.00% 0.00pt 1.20%;"><span style=" font-family:&#39;HWPserif&#39;;">1. 제안서 구성 및 작성순서</span></p>
+<div class="ps55 cs158" style=""><table style="width:99.66%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:5;">
+<colgroup>
+<col style="width:36.28pt;"><col style="width:76.04pt;"><col style="width:367.92pt;">
+</colgroup>
+<tbody><tr>
+<td colspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:29.04pt;">
+<p class="ps3 cs27" style=" line-height:100%;">구     분</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:29.04pt;">
+<p class="ps3 cs27" style=" line-height:100%;">작   성   지  침</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:210.44pt;">
+<p class="ps103 cs27" style=" line-height:100%;">Ⅰ. 신 청 서</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:210.44pt;">
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.58%;">• 제안서 표지(서식 제1호)</p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.58%;">• 신청기관 일반현황 및 연혁(서식 제2호)</p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.16%;">-  기관명, 대표자, 주소, 전화번호, 설립연도 등</p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.58%;">• 기관별 연구조사경력자 현황</p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.16%;">-  연구원의 자격 및 경력 요약 총괄집계(서식 제3호)</p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.16%;">-  <span style=" letter-spacing:-0.16em;">본 용역작업에 실제로 참여하는 직원의 개인별 경력사항(서식 제3- 1호)</span></p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.58%;">• 정량평가 관련 문서</p>
+<p class="ps90 cs194" style=" margin:0.00pt 0.00% 0.00pt 3.16%;">- <span style=" letter-spacing:-0.19em;"> </span><span style=" letter-spacing:-0.20em;">최근 5년 이내 공공기관이 발주한 용역 수행실적(공고일 기준, 서식 제4호)</span></p>
+<p class="ps90 cs194" style=" margin:0.00pt 0.00% 0.00pt 3.16%;">- <span style=" letter-spacing:-0.19em;"> 관련 분야 전문 역량(공인 지정) 실적(공고일 기준, 서식 제5호)</span><span style=" letter-spacing:-0.12em;"> </span></p>
+<p class="ps90 cs197" style=" margin:0.00pt 0.00% 0.00pt 2.95%;">-  신인도 및 신용평가등급서 등</p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.58%;">• 기타 참여기관 추가증빙서류(필요한 경우)<span style=" letter-spacing:-0.15em;"></span></p>
+<p class="ps103 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.58%;">• 입찰참가 각서 (서식 제6호)</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:304.10pt;">
+<p class="ps4 cs27" style=" margin:0.00pt 0.00% 0.00pt 17.92%;">Ⅱ.</p>
+<p class="ps4 cs27" style=" margin:0.00pt 0.00% 0.00pt 17.92%;"><span style=" letter-spacing:-0.03em;">조사</span></p>
+<p class="ps4 cs43" style=" margin:0.00pt 0.00% 0.00pt 17.38%;">계획</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:43.88pt;">
+<p class="ps56 cs44" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 6.58%;">1. 개    요</p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:43.88pt;">
+<p class="ps56 cs42" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 1.36%;">• 사업수행 목적 및 구체적 방향성 설정</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:99.44pt;">
+<p class="ps56 cs45" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 6.58%;">2. 조사인력<span style=" letter-spacing:-0.11em;"></span></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:99.44pt;">
+<p class="ps57 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.36%;">• 사업수행팀 조직구성체계 및 전문인력 투입계획</p>
+<p class="ps57 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.36%;">• 총괄 책임연구원 및 연구원의 전공 제시</p>
+<p class="ps57 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.36%;">• 분야별 사업내용의 연계‧종합을 위한 방안 제시</p>
+<p class="ps57 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.36%;">• 사업수행인력 및 수행업무 예비인력 확보방안 및 보유현황</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:155.18pt;">
+<p class="ps56 cs48" style=" margin:0.00pt 0.00% 0.00pt 6.58%;">3. 수행</p>
+<p class="ps56 cs49" style=" margin:0.00pt 0.00% 0.00pt 25.04%;"><span style=" letter-spacing:-0.09em;">세부계획</span><span style=" letter-spacing:-0.14em;"></span></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:155.18pt;">
+<p class="ps85 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.36%;">• 사업추진 계획의 구체적 방법</p>
+<p class="ps56 cs42" style=" margin:0.00pt 0.00% 0.00pt 4.51%;">-  지원 및 업무 추진세부내용, 방법 등</p>
+<p class="ps56 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.36%;">• 사업 지원 조직, 업무분장 등의 효율적인 수행방안 제시</p>
+<p class="ps86 cs42" style=" margin:0.00pt 0.00% 0.00pt 4.51%;">-  참여 인력의 조직, 인력별 업무 범위, 조직 운영 방식 </p>
+<p class="ps86 cs42" style=" margin:0.00pt 0.00% 0.00pt 1.36%;">• 사업 관리 방법</p>
+<p class="ps155 cs42" style=" text-indent:-3.27%; margin:0.00pt 0.00% 0.00pt 7.79%;">-  원활<span style=" letter-spacing:-0.09em;">한 커뮤니케이션 방안, 사업의 공정성 및 합리성 확보, 향후</span> 발전 방향 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps55 cs42" style="">※ 위 사항을 기초로 작성 하되 과업수행을 위한 내용의 첨삭과 추가자료 제시가 가능함</p>
+<p class="ps163 cs42" style=" margin:0.00pt 0.00% 0.00pt 2.41%;">(붙임 제안서 세부내용 작성예시 참조)</p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps91 cs157" style=" margin:0.00pt 0.00% 0.00pt 1.20%;">2. 제안서 및 제안요약서 작성방법</p>
+<p class="ps92 cs159" style=" margin:0.00pt 0.00% 0.00pt 4.00%;"><span style=" font-size:13.00pt; line-height:160.00%; letter-spacing:-0.06em;">1) 규    격 : 본문 A4, 백색용지 종으로 작성 단면으로 인쇄</span></p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 19.27%;">(여백: 위쪽- 20,머리말- 15,왼쪽- 20,오른쪽- 15,꼬리말- 10,아래쪽- 10)</p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.61%;">2) 제본방법 : 상철</p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.61%;">3) 수    량 </p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 6.02%;">-  제  안  <span style=" letter-spacing:-0.11em;">서 : A4용지 30장(단면 인쇄) 이내로 작성(단, 발주자 요구 첨부자료는 별도임)</span></p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 6.02%;">-  제안요약서 : A4용지 5장(단면 인쇄) 이내로 작성</p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.61%;">4) 항목구분은 Ⅰ, 1, 가, 1), 가), ①, ㉮ 순으로 한다.</p>
+<p class="ps156 cs42" style=" text-indent:-3.31%; margin:0.00pt 0.00% 0.00pt 6.92%;">5) 제<span style=" letter-spacing:-0.09em;">안서와 첨부자료(각종 증빙서류)는 쉽게 구분될 수 있도록 하며, 인식표(띠지) 등을</span> 붙여 해당 증빙자료별로 쉽게 구분될 수 있도록 한다. </p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.61%;">6) 글 휴먼명조로 작성하되, 대제목 16호, 소제목 14호, 본문 13호로 작성한다. </p>
+<p class="ps92 cs42" style=" margin:0.00pt 0.00% 0.00pt 3.61%;">7) 쪽수는 하단 중앙에 “- 1- ”와 같이 표시(표지 및 목차 제외)한다.</p>
+<p class="ps92 cs160" style=" text-indent:-6.25%; margin:0.00pt 0.00% 0.00pt 6.25%;"><br></p>
+<p class="ps94 cs157" style=" margin:0.00pt 0.00% 0.00pt 0.01%;">3. 제안서 작성 시 유의사항</p>
+<p class="ps93 cs42" style=" margin:0.00pt 0.00% 0.00pt 2.41%;">1) 제안서의 구성은 목차 순서에 따라 각각 세분하여 누락 없이 작성</p>
+<p class="ps157 cs42" style=" text-indent:-3.19%; margin:0.00pt 0.00% 0.00pt 5.60%;">2) 제<span style=" letter-spacing:-0.08em;">안서의 내용을 객관적으로 입증하기 위한 근거자료 및 관련 자료가 있으면 제출하여</span> 정확성을 확보하여야 하며, 내용이 많을 경우는 별지를 사용하여 작성</p>
+<p class="ps158 cs42" style=" text-indent:-3.31%; margin:0.00pt 0.00% 0.00pt 5.72%;">3) 제출된 서류 기재사항의 누락 또는 기재내용이 상이함에 따른 불이익은 제안기관이 감수하여야 함</p>
+<p class="ps93 cs42" style=" margin:0.00pt 0.00% 0.00pt 2.41%;">4) 제안서는 A4 용지 작성을 원칙으로 함</p>
+<p class="ps93 cs42" style=" text-indent:-3.84%; margin:0.00pt 0.00% 0.00pt 6.25%;">5) 제안서는 제안요청 사항을 최대한 충족하도록 하고 꼭 필요한 사항 위주로 명확한 용어로 표현</p>
+<p class="ps93 cs42" style=" text-indent:-3.84%; margin:0.00pt 0.00% 0.00pt 6.25%;">6) 제안된 내용이 사실과 다르거나 허위로 판명될 경우, 이로 인하여 발생하는 모든 민‧형사상의 책임은 제안서를 제출한 기관에게 있으며 이에 따른 모든 행위를 무효로 함</p>
+<p class="ps157 cs42" style=" text-indent:-3.19%; margin:0.00pt 0.00% 0.00pt 5.60%;">7) 본 제안요청서의 전체 또는 일부가 제안서 제출 이외의 다른 목적으로 사용되어서는 안 되며, 선정된 위탁기관은 발주기관의 보안요청을 준수할 것에 동의하여야 한다. 또한, 본 사업의 수주경쟁에 참여함으로써 위탁기관이 획득한 발주기관에 대한 정보는 발주기관의 서면에 의한 승인 없이는 외부에 누설할 수 없음</p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps91 cs157" style=" margin:0.00pt 0.00% 0.00pt 1.20%;"><span style=" font-family:&#39;HWPsansserif&#39;; font-size:14.00pt; line-height:175.00%; letter-spacing:0.00em;">[서식 1, 제안서 작성서식]</span></p>
+<p class="ps53 cs161" style=" text-indent:-20.09%; margin:0.00pt 0.00% 0.00pt 20.09%;"><br></p>
+<p class="ps3 cs7" style="">제안서 표지 양식</p>
+<div style="position:relative; ">
+<div style="position:absolute; left:0.74%; top:107.88pt; z-index:37; width:12.63%; min-height:1.00pt;">
+<!--[if lt IE 9]><v:shape style="z-index:-1;" coordsize="6088,100"  stroked="false" fillcolor="#000000" path="m0,0 l6088,0 e" >
+</v:shape><![endif]-->
+<svg style="z-index:-1; position:absolute; left:0; top:0; background:transparent; width:100%; height:100%;" preserveAspectRatio="none" viewBox="0 0 6088 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+<line x1="0" y1="0" x2="6088" y2="0" style="stroke:none;fill:#000000;"></line>
+</svg>
+</div>
+</div>
+<div class="ps11 cs162" style=" margin:0.00pt 0.00% 5.00pt 0.00%;"><table style="width:98.24%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:0;">
+<colgroup>
+<col style="width:373.95pt;"><col style="width:83.68pt;"><col style="width:15.77pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:none #000000 1.51px; border-bottom:none #000000 1.51px; padding:1.40pt; height:22.00pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.14%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:none #000000 1.51px; border-right:none #000000 1.51px; border-bottom:solid #000000 1.13px; padding:1.40pt; height:22.00pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.62%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:none #000000 1.51px; border-right:solid #000000 1.51px; border-bottom:none #000000 1.51px; padding:1.40pt; height:22.00pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 3.30%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:none #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.13px; border-bottom:none #000000 1.51px; padding:1.40pt; height:22.00pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.14%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.13px; border-left:solid #000000 1.13px; border-right:solid #000000 1.13px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:22.00pt;">
+<p class="ps58 cs51" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.62%;">문서 접수번호</p>
+</td>
+<td style=" border-top:none #000000 1.51px; border-left:solid #000000 1.13px; border-right:solid #000000 1.51px; border-bottom:none #000000 1.51px; padding:1.40pt; height:22.00pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 3.30%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:none #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.51px; border-bottom:none #000000 1.51px; padding:1.40pt; height:50.46pt;">
+<p class="ps58 cs53" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.14%;"></p>
+</td>
+<td style=" border:solid #000000 1.51px; padding:1.40pt; height:50.46pt;">
+<p class="ps58 cs54" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.62%;"></p>
+</td>
+<td style=" border-top:none #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.51px; border-bottom:none #000000 1.51px; padding:1.40pt; height:50.46pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 3.30%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:none #000000 1.51px; border-left:solid #000000 1.51px; border-right:none #000000 1.13px; border-bottom:none #000000 1.51px; padding:1.40pt; height:8.20pt;">
+<p class="ps58 cs53" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.14%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:none #000000 1.13px; border-right:none #000000 1.13px; border-bottom:none #000000 1.51px; padding:1.40pt; height:19.20pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 0.62%;"></p>
+</td>
+<td style=" border-top:none #000000 1.51px; border-left:none #000000 1.13px; border-right:solid #000000 1.51px; border-bottom:none #000000 1.51px; padding:1.40pt; height:19.20pt;">
+<p class="ps58 cs52" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 3.30%;"></p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style=" border-top:none #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:430.93pt;">
+<p class="ps59 cs55" style=" margin:0.00pt 2.11% 0.00pt 3.50%;"><span style=" font-size:23.00pt; line-height:150.00%; letter-spacing:0.00em;">『</span><span style=" font-size:23.00pt; line-height:150.00%; letter-spacing:0.00em;">학교공간혁신 지원 전문기관 지정</span><span style=" font-size:23.00pt; line-height:150.00%; letter-spacing:0.00em;">』</span></p>
+<p class="ps2 cs53" style=""><br></p>
+<p class="ps3 cs56" style="">제안서<span style=" font-size:11.00pt; line-height:160.00%;"></span></p>
+<p class="ps60 cs58" style=""><br></p>
+<p class="ps3 cs59" style=" margin:0.00pt 0.00% 0.00pt 1.48%;">위와 같이 제안서를 제출합니다.<span style=" font-size:11.00pt; line-height:160.00%; letter-spacing:0.00em; font-weight:bold;"></span></p>
+<p class="ps4 cs59" style=""><br></p>
+<p class="ps4 cs59" style=""><br></p>
+<p class="ps4 cs59" style=""><br></p>
+<p class="ps3 cs59" style="">2019년  월  일<span style=" font-size:11.00pt; line-height:160.00%; letter-spacing:0.00em; font-weight:bold;"></span></p>
+<p class="ps3 cs53" style=""><br></p>
+<p class="ps3 cs53" style=""><br></p>
+<p class="ps3 cs53" style=""><br></p>
+<p class="ps3 cs59" style=""><br></p>
+<p class="ps3 cs41" style="">책임연구원 :<span style=" color:#191919;"> ○○○ (인)</span><span style=" font-size:11.00pt; line-height:160.00%; color:#191919;"></span></p>
+<p class="ps61 cs62" style=" margin:0.00pt 0.00% 0.00pt 2.21%;"><br></p>
+<p class="ps61 cs62" style=""><br></p>
+</td>
+</tr>
+</tbody></table>
+<span style=" font-family:&#39;HWPserif&#39;; font-size:11.00pt; line-height:160.00%; font-weight:normal;"></span></div>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[서식 2]</p>
+<p class="ps62 cs164" style=" margin:0.00pt 0.00% -7.80pt 0.00%;"><br></p>
+<p class="ps3 cs85" style="">일반현황 및 연혁</p>
+<div class="ps16 cs165" style=""><table style="width:98.30%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:1;">
+<colgroup>
+<col style="width:111.99pt;"><col style="width:153.81pt;"><col style="width:77.00pt;"><col style="width:130.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps63 cs63" style=" line-height:100%; margin:0.00pt 4.46% 0.00pt 4.46%;">회사명</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps15 cs63" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps63 cs63" style=" line-height:100%; margin:0.00pt 6.49% 0.00pt 6.49%;">대표자</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps15 cs63" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.22pt;">
+<p class="ps63 cs63" style=" line-height:100%; margin:0.00pt 4.46% 0.00pt 4.46%;">사업분야</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.22pt;">
+<p class="ps15 cs63" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.22pt;">
+<p class="ps63 cs63" style=" line-height:100%; margin:0.00pt 6.49% 0.00pt 6.49%;">사업자번호</p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.22pt;">
+<p class="ps15 cs63" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps63 cs63" style=" line-height:100%; margin:0.00pt 4.46% 0.00pt 4.46%;">주소</p>
+</td>
+<td colspan="3" style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps15 cs63" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps63 cs63" style=" line-height:100%; margin:0.00pt 4.46% 0.00pt 4.46%;">전화번호</p>
+</td>
+<td colspan="3" style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps15 cs63" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps63 cs63" style=" line-height:100%; margin:0.00pt 4.46% 0.00pt 4.46%;">회사설립년도</p>
+</td>
+<td colspan="3" style=" border:solid #000000 1.00px; padding:1.40pt; height:27.18pt;">
+<p class="ps15 cs63" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 9.95%;">년   월 </p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.40pt; height:27.22pt;">
+<p class="ps16 cs63" style=" line-height:100%;">해당부문 종사기간</p>
+</td>
+<td colspan="3" style=" border:solid #000000 1.00px; padding:1.40pt; height:27.22pt;">
+<p class="ps15 cs63" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 9.95%;">년   월  ～     년    월 (   년   개월)</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" style=" border:solid #000000 1.00px; padding:1.40pt; height:387.90pt; vertical-align:top;">
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps64 cs63" style=" margin:0.00pt 0.00% 0.00pt 1.73%;"><span style=" text-decoration:underLine;">주요연혁</span></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=" margin:0.00pt 0.00% 0.00pt 1.27%;">1. </p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+<p class="ps96 cs63" style=""><br></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[서식 3]</p>
+<p class="ps3 cs85" style="">기관 참여자의 자격 및 경력(총괄표)<span style=" font-weight:normal;"></span></p>
+<p class="ps3 cs167" style=""><br></p>
+<div class="ps4 cs167" style=""><table style="width:100.00%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:6;">
+<colgroup>
+<col style="width:62.76pt;"><col style="width:62.76pt;"><col style="width:62.76pt;"><col style="width:62.76pt;"><col style="width:62.76pt;"><col style="width:62.76pt;"><col style="width:62.76pt;"><col style="width:45.74pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style=" line-height:100%;">구 분</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style=" line-height:100%;">성 명</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style=" line-height:100%;">연 령</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style=" line-height:100%;">직 위</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style="">학위</p>
+<p class="ps65 cs51" style="">(학력)</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style=" line-height:100%;">전 공</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style=" line-height:100%;">용역참여경력건수</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:34.06pt;">
+<p class="ps65 cs51" style=" line-height:100%;">비고</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:490.20pt;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps4 cs160" style=" margin:0.00pt 0.00% 0.00pt 1.20%;">※ 구분란에는 책임연구원, 연구원, 연구보조원, 보조원으로 구분 기재</p>
+<p class="ps4 cs161" style=""><br></p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[서식 3- 1]</p>
+<p class="ps3 cs85" style="">참여인력 이력사항<span style=" font-weight:normal;"></span></p>
+<p class="ps3 cs168" style=""><br></p>
+<div class="ps4 cs169" style=""><table style="width:99.99%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:4;">
+<colgroup>
+<col style="width:52.08pt;"><col style="width:75.48pt;"><col style="width:32.44pt;"><col style="width:7.92pt;"><col style="width:71.60pt;"><col style="width:44.12pt;"><col style="width:23.56pt;"><col style="width:44.40pt;"><col style="width:20.45pt;"><col style="width:41.85pt;"><col style="width:3.12pt;"><col style="width:64.84pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;">성  명</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 63.59%;">(인)</p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;">소  속</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;"></p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;">직  책</p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;"></p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;">연  령</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 74.03%;">세</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:55.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;">학  력</p>
+</td>
+<td colspan="4" style=" border:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps4 cs63" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 35.21%;">학교          전공</p>
+</td>
+<td colspan="4" style=" border:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;">해당분야경력</p>
+</td>
+<td colspan="3" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps4 cs63" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 27.32%;">년    개월</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" style=" border:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps4 cs63" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 28.81%;">대학원          전공</p>
+</td>
+<td colspan="4" style=" border:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps3 cs63" style=" line-height:100%;">학        위</p>
+</td>
+<td colspan="3" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:26.20pt;">
+<p class="ps4 cs63" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.51px; padding:1.40pt; height:71.71pt;">
+<p class="ps3 cs63" style=" line-height:100%;">조사경력</p>
+</td>
+<td colspan="11" style=" border:solid #000000 1.51px; padding:1.40pt; height:71.71pt;">
+<p class="ps4 cs63" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td colspan="12" style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:29.04pt;">
+<p class="ps3 cs63" style=" line-height:100%;">조   사   참   여   실   적</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:31.88pt;">
+<p class="ps3 cs63" style=" line-height:100%;">용   역   명</p>
+</td>
+<td colspan="3" style=" border:solid #000000 1.00px; padding:1.40pt; height:31.88pt;">
+<p class="ps3 cs63" style="">조사기간</p>
+<p class="ps3 cs63" style="">(  년  월~  년  월)</p>
+</td>
+<td colspan="2" style=" border:solid #000000 1.00px; padding:1.40pt; height:31.88pt;">
+<p class="ps3 cs63" style=" line-height:100%;">담당업무</p>
+</td>
+<td colspan="2" style=" border:solid #000000 1.00px; padding:1.40pt; height:31.88pt;">
+<p class="ps3 cs63" style=" line-height:100%;">발 주 처</p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:31.88pt;">
+<p class="ps3 cs63" style=" line-height:100%;">비    고</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:199.50pt;">
+<p class="ps4 cs63" style=" line-height:100%;">※ 조사내용 만 기재</p>
+</td>
+<td colspan="3" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:199.50pt;">
+<p class="ps4 cs63" style=" line-height:100%;"></p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:199.50pt;">
+<p class="ps4 cs63" style=" line-height:100%;"></p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:199.50pt;">
+<p class="ps4 cs63" style=" line-height:100%;"></p>
+</td>
+<td colspan="2" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:199.50pt;">
+<p class="ps4 cs63" style=" line-height:100%;"></p>
+</td>
+</tr>
+</tbody></table>
+<span style=" font-family:&#39;HWPsansserif&#39;; font-size:11.00pt; line-height:160.00%;"></span></div>
+<p class="ps15 cs170" style=" margin:0.00pt 0.00% 0.00pt 1.18%;">※ 유의사항</p>
+<p class="ps66 cs170" style=" margin:0.00pt 0.00% 0.00pt 2.37%;">○ 세종특별자치시교육청의 <span style=" letter-spacing:0.04em;">별도 요청시 각종 증빙자료(졸업증명서</span> 등)를 제출해야 함.</p>
+<p class="ps67 cs170" style=" text-indent:-3.62%; margin:0.00pt 0.00% 0.00pt 5.99%;">○ 최종학력 졸업증명서, 경력 및 참여 실적 증빙자료(조사보고서 등)는 낙찰자로 결정 된 후 계약 시 첨부</p>
+<p class="ps68 cs170" style=" text-indent:-3.81%; margin:0.00pt 0.00% 0.00pt 6.17%;">○ <span style=" letter-spacing:-0.06em;">본 작업에 직접 참여하는 종사자를 대상으로 하되, 본 작업 공고일 전에 응모업체에 입사한</span> 자로 한정</p>
+<p class="ps69 cs170" style=" text-indent:-3.80%; margin:0.00pt 0.00% 0.00pt 6.17%;">○ 상기 기재내용이 허위사실로 판명될 경우 최종 선정 후에도 계약을 해제 또는 해지 할 수 있음.</p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[서식 4, 제안서 1부에만 포함]</p>
+<p class="ps70 cs173" style=" margin:0.00pt 0.00% 5.00pt 0.00%;"><br></p>
+<p class="ps3 cs85" style="">공공기관 발주 연구용역 수행 실적<span style=" font-family:&#39;HWPsansserif&#39;; font-size:16.00pt; line-height:160.00%; font-weight:normal;">(최근 5년간)</span><span style=" font-family:&#39;HWPsansserif&#39;; font-size:6.00pt; line-height:160.00%; font-weight:normal;"></span></p>
+<p class="ps71 cs51" style="">(금액단위:천원)</p>
+<div class="ps4 cs167" style=""><table style="width:99.36%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:3;">
+<colgroup>
+<col style="width:69.69pt;"><col style="width:101.49pt;"><col style="width:121.73pt;"><col style="width:72.58pt;"><col style="width:66.79pt;"><col style="width:46.55pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">사업기간</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">사업명</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">사업개요</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">계약금액</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style="">발주처</p>
+<p class="ps65 cs63" style="">(연락처)</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">비고</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:359.71pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:359.71pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:359.71pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:359.71pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:359.71pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:359.71pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:29.04pt;">
+<p class="ps3 cs51" style=" line-height:100%;">계</p>
+</td>
+<td colspan="5" style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:29.04pt;">
+<p class="ps4 cs51" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 11.73%;">건            천원</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps72 cs172" style="">참고) 1. 현재 수행중인 업무도 포함하여 최근 연도순으로 기재함</p>
+<p class="ps72 cs172" style=" margin:0.00pt 0.00% 0.00pt 6.67%;">2. 공동도급계약일 경우에는 계약 금액란에 제안사의 지분실적을 기재함.</p>
+<p class="ps72 cs172" style=" margin:0.00pt 0.00% 0.00pt 5.56%;">&nbsp;&nbsp;3. 실적증명서가 없는 실적은 인정하지 않음</p>
+<p class="ps73 cs172" style=" text-indent:-4.54%; margin:0.00pt 0.00% 0.00pt 10.10%;">&nbsp;&nbsp;4. 실적증명서는 조달청 나라장터 G2B에서 발급되는 조달청 온라인 실적증명서를 우선하며 G2B에서 실적 증명 발급이 어려운 경우엔 별도의 실적증명서를 첨부하여 제출</p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[서식 5, 제안서 1부에만 포함]</p>
+<p class="ps70 cs173" style=" margin:0.00pt 0.00% 5.00pt 0.00%;"><br></p>
+<p class="ps3 cs85" style="">관련 분야 전문 역량(공인 지정) 실적<span style=" font-family:&#39;HWPsansserif&#39;; font-size:6.00pt; line-height:160.00%; font-weight:normal;"></span></p>
+<p class="ps71 cs51" style="">(금액단위:천원)</p>
+<div class="ps4 cs167" style=""><table style="width:98.98%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:9;">
+<colgroup>
+<col style="width:83.84pt;"><col style="width:129.79pt;"><col style="width:99.09pt;"><col style="width:114.90pt;"><col style="width:49.38pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">공인기관명</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">공인기관으로서 수행 업무 범위</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style="">지정 기관</p>
+<p class="ps65 cs63" style="">(공공기관)</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style="">지정기간</p>
+<p class="ps65 cs32" style="">(지정일 ~ 지정완료일)</p>
+</td>
+<td style=" border-top:solid #000000 1.51px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.00px; padding:1.40pt; height:39.72pt;">
+<p class="ps65 cs63" style=" line-height:100%;">비고</p>
+</td>
+</tr>
+<tr>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.51px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:475.74pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:475.74pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:475.74pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.00px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:475.74pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #000000 1.00px; border-left:solid #000000 1.00px; border-right:solid #000000 1.51px; border-bottom:solid #000000 1.51px; padding:1.40pt; height:475.74pt; vertical-align:top;">
+<p class="ps4 cs51" style=" line-height:100%;"></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps72 cs172" style="">참고) 1. 현재 국가 공인된 평가(지정)기관의 실적을 최근 지정일 기준으로 기재함</p>
+<p class="ps72 cs172" style=" margin:0.00pt 0.00% 0.00pt 5.56%;">&nbsp;2. 지정기관에서 발급한 지정서 또는 공인문서 등이 없는 실적은 인정하지 않음</p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[서식 6, 제안서 1부에만 포함]</p>
+<div class="ps74 cs164" style=""><table style="width:99.41%;vertical-align:text-bottom; display:inline-block; margin-top:1.40pt; margin-right:0.00pt; margin-bottom:1.40pt; margin-left:0.00pt; z-index:2;">
+<colgroup>
+<col style="width:479.07pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:solid #000000 1.51px; padding:1.41pt; height:619.83pt;">
+<p class="ps75 cs65" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps75 cs65" style=" margin:0.00pt 2.09% 0.00pt 0.00%;">각     서</p>
+<p class="ps76 cs66" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps77 cs67" style=" margin:0.00pt 2.09% 0.00pt 2.60%;"><span style=" font-family:&#39;HWPserif&#39;; letter-spacing:-0.05em; font-weight:bold;">입찰건명 : </span><span style=" font-family:&#39;HWPserif&#39;; font-size:16.00pt; line-height:150.00%; letter-spacing:0.00em; font-weight:bold;">학교공간혁신 지원 전문기관 지정 </span><span style=" font-family:&#39;HWPserif&#39;; font-size:17.00pt; line-height:150.00%; letter-spacing:0.00em;"></span></p>
+<p class="ps76 cs68" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps78 cs68" style=" text-indent:2.92%; margin:0.00pt 2.09% 0.00pt 2.92%;"><span style=" letter-spacing:-0.06em;">위 사업을 위한 사업자 선정방식 및 제안요청서 내용과 본 입찰에 관해</span><span style=" letter-spacing:-0.03em;"> </span><span style=" letter-spacing:-0.04em;">귀 교육청에서 제시한 심사기준과 제안서 평가위원회에서 결정한 사항에</span><span style=" letter-spacing:-0.03em;"> 승복하고 그 결과에 대해서는 이의를 제기하지 않겠습니다.</span></p>
+<p class="ps79 cs68" style=" text-indent:-2.92%; margin:0.00pt 2.09% 0.00pt 2.92%;"><br></p>
+<p class="ps78 cs68" style=" text-indent:2.92%; margin:0.00pt 2.09% 0.00pt 2.92%;"><span style=" letter-spacing:-0.03em;">아울러 본인이 계약상대자로 선정되어 계약이 체결될 경우 용역이</span> 완료 될 때까지 성실하게 그 임무를 수행하겠습니다.</p>
+<p class="ps79 cs68" style=" text-indent:-2.92%; margin:0.00pt 2.09% 0.00pt 2.92%;"><br></p>
+<p class="ps78 cs68" style=" text-indent:2.92%; margin:0.00pt 2.09% 0.00pt 2.92%;"><span style=" letter-spacing:-0.04em;">만약 위의 내용에 대하여 어느 한 가지 사항이라도 위반할 때에는 법</span><span style=" letter-spacing:-0.06em;">적인 보상뿐만 아니라 차후 귀 교육청의 어떠한 조치도 감수하겠습니다</span><span style=" letter-spacing:-0.04em;">.</span></p>
+<p class="ps76 cs68" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps76 cs68" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps75 cs68" style=" margin:0.00pt 2.09% 0.00pt 0.00%;">2019년   월    일</p>
+<p class="ps76 cs68" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps76 cs68" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps19 cs68" style=" margin:0.00pt 2.09% 0.00pt 51.59%;">소     속 : </p>
+<p class="ps19 cs68" style=" margin:0.00pt 2.09% 0.00pt 51.59%;">기관 대표 :              (인)</p>
+<p class="ps75 cs66" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps76 cs66" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps76 cs66" style=" margin:0.00pt 2.09% 0.00pt 0.00%;"><br></p>
+<p class="ps76 cs72" style=" margin:0.00pt 2.09% 0.00pt 1.46%;"><span style=" font-family:&#39;HWPsansserif&#39;; font-size:20.00pt; line-height:100.00%;">세종특별자치시교육청 교육감</span><span style=" font-size:20.00pt; line-height:100.00%;"> 귀하</span><span style=" font-size:20.00pt; line-height:100.00%; font-weight:normal;"> </span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[서식 7, 제안서 1부에만 포함]</p>
+<p class="ps95 cs148" style=" text-indent:-20.09%; margin:0.00pt 0.00% 0.00pt 20.09%;"><br></p>
+<p class="ps80 cs176" style="">평가위원 예비명부 고유번호 선택 확인서</p>
+<p class="ps14 cs177" style=""><br></p>
+<p class="ps13 cs177" style="">❏ 입찰건명 : <span style=" font-family:&#39;HWPsansserif&#39;; font-size:14.00pt; line-height:180.00%; letter-spacing:-0.16em;"></span></p>
+<div class="ps4 cs177" style=""><table style="width:100.00%;vertical-align:text-bottom; display:inline-block; margin-top:1.41pt; margin-right:0.00pt; margin-bottom:1.41pt; margin-left:0.00pt; z-index:8;">
+<colgroup>
+<col style="width:49.88pt;"><col style="width:49.88pt;"><col style="width:49.88pt;"><col style="width:49.88pt;"><col style="width:49.88pt;"><col style="width:49.88pt;"><col style="width:49.88pt;"><col style="width:48.43pt;"><col style="width:48.44pt;"><col style="width:36.07pt;">
+</colgroup>
+<tbody><tr>
+<td colspan="9" style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:23.32pt;">
+<p class="ps81 cs51" style=" line-height:100%;">선택고유번호</p>
+</td>
+<td rowspan="2" style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:49.46pt;">
+<p class="ps81 cs51" style=" line-height:100%;">비고</p>
+</td>
+</tr>
+<tr>
+<td colspan="7" style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:23.32pt;">
+<p class="ps81 cs51" style=" line-height:100%;">평가위원</p>
+</td>
+<td colspan="2" style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:23.32pt;">
+<p class="ps81 cs51" style=" line-height:100%;">예비위원</p>
+</td>
+</tr>
+<tr>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps81 cs51" style=" line-height:100%;"></p>
+</td>
+<td style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:57.28pt;">
+<p class="ps96 cs75" style=" line-height:100%;"></p>
+</td>
+</tr>
+<tr>
+<td colspan="10" style=" border:solid #000000 1.00px; padding:1.41pt 5.10pt; height:360.92pt;">
+<p class="ps82 cs51" style=" margin:0.00pt 0.00% 0.00pt 1.24%;"><br></p>
+<p class="ps82 cs51" style=" margin:0.00pt 0.00% 0.00pt 2.49%;">평가위원 선정을 위한 고유번호를 위와 같이 선택하여 제출하며 이로 말미암은 </p>
+<p class="ps82 cs51" style=" margin:0.00pt 0.00% 0.00pt 1.24%;">평가위원의 선정에 이의가 없음을 확약합니다.</p>
+<p class="ps96 cs51" style=""><br></p>
+<p class="ps96 cs51" style=" margin:0.00pt 0.00% 0.00pt 60.98%;">2019년      월      일</p>
+<p class="ps96 cs51" style=""><br></p>
+<p class="ps96 cs51" style=""><br></p>
+<p class="ps96 cs51" style=""><br></p>
+<p class="ps96 cs51" style=" margin:0.00pt 0.00% 0.00pt 9.96%;">입찰참가 신청 기관(업체)명 :                                 (인)</p>
+<p class="ps96 cs51" style=""><br></p>
+<p class="ps96 cs51" style=" margin:0.00pt 0.00% 0.00pt 9.96%;">소     재     지 ( 주 소 ) : </p>
+<p class="ps96 cs51" style=""><br></p>
+<p class="ps96 cs51" style=" margin:0.00pt 0.00% 0.00pt 9.96%;">주민등록번호( 사업자번호 ) : </p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps83 cs179" style="">※ 유의사항</p>
+<p class="ps83 cs179" style=" margin:0.00pt 0.00% 0.00pt 1.25%;">◯ 평가위원 예비명부 고유번호는 1~21번까지임</p>
+<p class="ps84 cs179" style=" margin:0.00pt 0.00% 0.00pt 1.25%;">◯ 1~21번까지 고유번호 중 8개의 번호를 기재(불참자 포함 추가지정)</p>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<p class="ps95 cs148" style="">[참고] 제안서 세부내용 작성 (예시)</p>
+<div class="ps95 cs148" style=""><div style="position:relative;vertical-align:text-bottom; display:inline-block; margin:0.00pt; z-index:16; border:solid #000000 1.00px; width:98.55%; min-height:616.01pt;">
+<div style="display:table;min-height:616.01pt;"><div style="display:table-cell;vertical-align:middle;width:474.90pt;">
+<div class="ps122 cs109" style=" margin:10.00pt 0.00% 0.00pt 0.00%;"><table style="width:65.06%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:17;">
+<colgroup>
+<col style="width:31.38pt;"><col style="width:5.65pt;"><col style="width:271.93pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #A994C5 1.51px; border-left:solid #8F94C5 1.89px; border-right:solid #8F94C5 1.89px; border-bottom:solid #A994C5 1.51px; padding:1.41pt;z-index:-1; background-color:#7B5DA3; height:25.49pt;">
+<p class="ps81 cs110" style=" line-height:100%;">I</p>
+</td>
+<td style=" border-top:none #000000 1.00px; border-left:solid #8F94C5 1.89px; border-right:none #000000 1.00px; border-bottom:none #000000 1.00px; padding:1.41pt; height:25.49pt;">
+<p class="ps96 cs111" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #A994C5 1.51px; border-left:none #000000 1.00px; border-right:none #000000 1.00px; border-bottom:solid #A994C5 1.51px; padding:1.41pt; height:25.49pt;">
+<p class="ps96 cs111" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 2.94%;">기관 현황</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs112" style="">1. 일반현황</p>
+<div class="ps124 cs113" style=""><table style="width:98.49%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:18;">
+<colgroup>
+<col style="width:467.75pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:28.70pt;">
+<p class="ps108 cs200" style=" line-height:100%; margin:3.00pt 0.00% 0.00pt 0.00%;">【작성방법】<span style=" letter-spacing:-0.08em; font-weight:normal;">기관의 목적, 연혁 주요 기능, 조직 현황 등을 기술</span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps124 cs113" style=" text-indent:-7.06%; margin:0.00pt 0.00% 0.00pt 7.06%;"><br></p>
+<div class="ps12 cs0" style=""><table style="width:65.06%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:19;">
+<colgroup>
+<col style="width:31.38pt;"><col style="width:5.65pt;"><col style="width:271.93pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #A994C5 1.51px; border-left:solid #8F94C5 1.89px; border-right:solid #8F94C5 1.89px; border-bottom:solid #A994C5 1.51px; padding:1.41pt;z-index:-1; background-color:#7B5DA3; height:22.66pt;">
+<p class="ps166 cs110" style=" line-height:100%;">Ⅰ I</p>
+</td>
+<td style=" border-top:none #000000 1.00px; border-left:solid #8F94C5 1.89px; border-right:none #000000 1.00px; border-bottom:none #000000 1.00px; padding:1.41pt; height:22.66pt;">
+<p class="ps96 cs111" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #A994C5 1.51px; border-left:none #000000 1.00px; border-right:none #000000 1.00px; border-bottom:solid #A994C5 1.51px; padding:1.41pt; height:22.66pt;">
+<p class="ps96 cs111" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 2.94%;">운영 역량 및 의지</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs112" style="">1. 전문기관 지정 필요성</p>
+<div class="ps123 cs112" style=""><table style="width:98.49%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:20;">
+<colgroup>
+<col style="width:467.75pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:54.17pt;">
+<p class="ps108 cs200" style=" margin:3.00pt 0.00% 0.00pt 0.00%;">【작성방법】</p>
+<p class="ps164 cs181" style="">1) 관련 법령에 따른 전문기관으로 지정을 받아야 하는 당위성 및 필요성 등 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs112" style="">2. 목표 및 추진전략</p>
+<div class="ps109 cs0" style=""><table style="width:98.49%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:21;">
+<colgroup>
+<col style="width:467.75pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:76.81pt;">
+<p class="ps108 cs200" style=" margin:3.00pt 0.00% 0.00pt 0.00%;">【작성방법】</p>
+<p class="ps108 cs181" style="">1) 본 사업을 통해 달성하고자 하는 비전과 목표를 구체적으로 기술</p>
+<p class="ps108 cs181" style="">2) 위 기술한 비전과 부합하는 추진목표 및 전략과제 </p>
+<p class="ps108 cs181" style="">3) 기관 운영 성과 지표 및 성과 지표 설정 사유 등을 자유롭게 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs112" style="">3. 기관 운영성과 및 지표</p>
+<div class="ps123 cs112" style=""><table style="width:100.00%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:22;">
+<colgroup>
+<col style="width:476.24pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:76.81pt;">
+<p class="ps108 cs200" style=" margin:3.00pt 0.00% 0.00pt 0.00%;">【작성방법】</p>
+<p class="ps111 cs181" style="">1) 학교공간혁신 업무와 관련한 그 간의 기관 운영성과 또는 향후 운영계획 등 제시</p>
+<p class="ps110 cs181" style="">2) 학교공간혁신사업 전문지원기관 지정시를 고려한 성과 지표 및 설정 사유 등을 자유롭게 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs112" style=" text-indent:-6.59%; margin:0.00pt 0.00% 0.00pt 6.59%;"><br></p>
+</div></div></div></div>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div></div>
+<div style="background-color:#808080; width:100%; height:10pt; "></div>
+<div style="position:relative; max-width:481.90pt; margin:0 auto 0 auto; padding:0 4pt 0 4pt;">
+<div style="position:relative; margin-top:56.69pt; margin-left:0pt; margin-bottom:42.51pt; width:100%; min-height:742.68pt; ">
+<div name="header" style="width:100%; min-height:42.51pt; ">
+</div>
+<div name="FlexerServerView" style="position:relative; padding:0; margin:0; width:100%; min-height:657.66pt; ">
+<div class="ps95 cs148" style=""><div style="position:relative;vertical-align:text-bottom; display:inline-block; margin:0.00pt; z-index:23; border:solid #000000 1.00px; width:98.55%; min-height:684.80pt;">
+<div style="display:table;min-height:684.80pt;"><div style="display:table-cell;vertical-align:middle;width:474.90pt;">
+<p class="ps123 cs107" style=" margin:10.00pt 0.00% 0.00pt 0.00%;">4. 기관장 및 구성원 추진 의지</p>
+<div class="ps123 cs114" style=""><table style="width:97.90%;vertical-align:text-bottom; display:inline-block; margin-top:1.41pt; margin-right:0.00pt; margin-bottom:1.41pt; margin-left:0.00pt; z-index:24;">
+<colgroup>
+<col style="width:464.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:36.00pt;">
+<p class="ps108 cs88" style=" margin:3.00pt 0.00% 0.00pt 0.00%;">【작성방법】</p>
+<p class="ps108 cs181" style="">1) 조직 구성원, 기관장 등의 <span style=" letter-spacing:-0.11em;">동 사업 추진 </span>의지 등을 자유롭게 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs107" style="">5. 기관의 중‧장기 발전 방안</p>
+<div class="ps123 cs114" style=""><table style="width:97.90%;vertical-align:text-bottom; display:inline-block; margin-top:1.41pt; margin-right:0.00pt; margin-bottom:1.41pt; margin-left:0.00pt; z-index:25;">
+<colgroup>
+<col style="width:464.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:36.00pt;">
+<p class="ps108 cs88" style=" margin:3.00pt 0.00% 0.00pt 0.00%;">【작성방법】</p>
+<p class="ps108 cs181" style="">1) 전문기관의 역할 강화를 위한 중‧장기 발전방안 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs114" style=" text-indent:-6.59%; margin:0.00pt 0.00% 0.00pt 6.59%;"><br></p>
+<table style="width:65.06%; margin-left:0.00%; margin-top:-41.72pt; z-index:26;">
+<colgroup>
+<col style="width:31.38pt;"><col style="width:5.65pt;"><col style="width:271.93pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #A994C5 1.51px; border-left:solid #8F94C5 1.89px; border-right:solid #8F94C5 1.89px; border-bottom:solid #A994C5 1.51px; padding:1.41pt;z-index:-1; background-color:#7B5DA3; height:22.66pt;">
+<p class="ps166 cs110" style=" line-height:100%;">Ⅱ I</p>
+</td>
+<td style=" border-top:none #000000 1.00px; border-left:solid #8F94C5 1.89px; border-right:none #000000 1.00px; border-bottom:none #000000 1.00px; padding:1.41pt; height:22.66pt;">
+<p class="ps96 cs111" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #A994C5 1.51px; border-left:none #000000 1.00px; border-right:none #000000 1.00px; border-bottom:solid #A994C5 1.51px; padding:1.41pt; height:22.66pt;">
+<p class="ps96 cs111" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 2.94%;">기관 운영계획</p>
+</td>
+</tr>
+</tbody></table>
+<div class="ps123 cs112" style=""><br></div>
+<p class="ps123 cs112" style="">1. 조직 및 인력운영계획</p>
+<div class="ps123 cs112" style=""><table style="width:97.90%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:27;">
+<colgroup>
+<col style="width:464.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:143.58pt;">
+<p class="ps114 cs88" style="">【작성방법】</p>
+<p class="ps165 cs203" style="">1) 사업추진을 위한 조직, 조직도, 규모, 기능 등 추진체제 및 주요 운영전략 제시(추진체계도 등<span style=" letter-spacing:-0.08em;"> 그림‧표 등으로 제시 가능)</span></p>
+<p class="ps165 cs181" style="">2) 업무 수행을 위한 조직 및 인력 운영 계획을 제시 : 인력 운영 계획을 제시하는 경우 고용 형태 및 인원수를 명확히 제시 </p>
+<p class="ps165 cs181" style="">3) 00명 이상의 00자격소지자 확보 명시, 홈페이지 제작 및 운영, 정책연구 수행 등이 가능하도록 인력 운영 내용 제시</p>
+<p class="ps165 cs204" style="">4) 타 연구 및 사업 중복 참여 금지(국가지원사업에 참여하고 있는 인력을 제외하고, 실제업무를 수행하는 인력으로 구성 원칙, 현재 타 연구사업 사업책임자 참여 제한) </p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs107" style="">2. 유관기관 협력체계 구축 및 운영계획</p>
+<div class="ps123 cs114" style=""><table style="width:97.90%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:28;">
+<colgroup>
+<col style="width:464.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:51.00pt;">
+<p class="ps1 cs88" style="">【작성방법】</p>
+<p class="ps113 cs88" style=" text-indent:-2.91%; margin:0.00pt 0.00% 0.00pt 2.91%;">1) <span style=" letter-spacing:-0.09em;">교육부, 시‧도교육청, 타 연구기관 등 유관기관 협력체계 구축 및 운영계획 서술(필요시 그림‧표</span> 등으로 제시 가능)</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps123 cs112" style="">3. 예산 편성 및 집행계획</p>
+<div class="ps123 cs112" style=""><table style="width:98.49%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:29;">
+<colgroup>
+<col style="width:467.75pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:54.00pt;">
+<p class="ps1 cs88" style="">【작성방법】</p>
+<p class="ps108 cs88" style="">1) 제시된 업무 수행을 위한 예산 편성계획<span style=" letter-spacing:-0.08em;">(인건비, 사업비, 운영비 비중 표시)을 분야별로 제시</span></p>
+<p class="ps108 cs181" style="">2) 편성된 예산에 대한 월별 또는 분기별 집행계획을 도표로 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div></div></div></div>
+<div class="ps95 cs148" style=""><div style="position:relative;vertical-align:text-bottom; display:inline-block; margin:0.00pt; z-index:30; border:solid #000000 1.00px; width:98.55%; min-height:653.68pt;">
+<div style="display:table;min-height:653.68pt;"><div style="display:table-cell;vertical-align:middle;width:474.90pt;">
+<p class="ps128 cs112" style=" margin:10.00pt 0.00% 0.00pt 0.00%;">4. 공간 확보계획</p>
+<div class="ps123 cs112" style=""><table style="width:98.49%;vertical-align:text-bottom; display:inline-block; margin-top:1.41pt; margin-right:0.00pt; margin-bottom:1.41pt; margin-left:0.00pt; z-index:31;">
+<colgroup>
+<col style="width:467.75pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:51.00pt;">
+<p class="ps1 cs88" style="">【작성방법】</p>
+<p class="ps108 cs181" style="">1) 업무 수행을 위한 공간 확보 계획, 권역별 지원계획이 있을 경우 지역센터 공간 확보 계획을 도면 등을 첨부하여 제시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps128 cs107" style="">5. 업무공정성 확보 계획</p>
+<div class="ps123 cs112" style=""><table style="width:97.90%;vertical-align:text-bottom; display:inline-block; margin-top:1.41pt; margin-right:0.00pt; margin-bottom:1.41pt; margin-left:0.00pt; z-index:32;">
+<colgroup>
+<col style="width:464.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:35.16pt;">
+<p class="ps1 cs88" style="">【작성방법】</p>
+<p class="ps108 cs181" style="">1) 기관의 업무공정성 확보를 위한 방안을 자유롭게 제시 : 청렴 확보, 보안 유지 등</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps128 cs107" style="">6. 업무효율성 제고 계획</p>
+<div class="ps130 cs112" style=""><table style="width:97.90%;vertical-align:text-bottom; display:inline-block; margin-top:1.41pt; margin-right:0.00pt; margin-bottom:1.41pt; margin-left:0.00pt; z-index:33;">
+<colgroup>
+<col style="width:464.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:54.00pt;">
+<p class="ps1 cs88" style="">【작성방법】</p>
+<p class="ps112 cs181" style="">1) <span style=" letter-spacing:-0.11em;">기관의 업무효율성 제고를 위한 방안을 자유롭게 제시 </span></p>
+<p class="ps112 cs182" style=" margin:0.00pt 0.00% 0.00pt 2.07%;">-  (예시) 근무 인력에 대한 유‧무형의 인센티브 제공, 최신 물품 지원 등<span style=" letter-spacing:-0.08em;"></span></p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p class="ps125 cs112" style=" text-indent:-6.59%; margin:0.00pt 0.00% -10.52pt 6.59%;"><br></p>
+<div class="ps123 cs112" style=""></div>
+<table style="width:65.06%; margin-left:0.00%; margin-top:0.00pt; z-index:34;">
+<colgroup>
+<col style="width:31.38pt;"><col style="width:5.65pt;"><col style="width:271.93pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border-top:solid #A994C5 1.51px; border-left:solid #8F94C5 1.89px; border-right:solid #8F94C5 1.89px; border-bottom:solid #A994C5 1.51px; padding:1.41pt;z-index:-1; background-color:#7B5DA3; height:22.66pt;">
+<p class="ps126 cs110" style=" line-height:100%;">Ⅳ</p>
+</td>
+<td style=" border-top:none #000000 1.00px; border-left:solid #8F94C5 1.89px; border-right:none #000000 1.00px; border-bottom:none #000000 1.00px; padding:1.41pt; height:22.66pt;">
+<p class="ps96 cs111" style=" line-height:100%;"></p>
+</td>
+<td style=" border-top:solid #A994C5 1.51px; border-left:none #000000 1.00px; border-right:none #000000 1.00px; border-bottom:solid #A994C5 1.51px; padding:1.41pt; height:22.66pt;">
+<p class="ps96 cs111" style=" line-height:100%; margin:0.00pt 0.00% 0.00pt 2.94%;">업무 수행계획</p>
+</td>
+</tr>
+</tbody></table>
+<div class="ps123 cs112" style=""><br></div>
+<p class="ps129 cs115" style=" text-indent:-6.59%; margin:0.00pt 0.00% -8.00pt 6.59%;"><br></p>
+<p class="ps127 cs116" style=" text-indent:-0.00%; margin:0.00pt 0.00% 0.00pt 2.82%;">1. 학교공간혁신사업 <span style=" font-weight:bold;">추진단 업무 지원</span></p>
+<p class="ps104 cs118" style=" margin:0.00pt 0.00% 0.00pt 2.82%;">2. 교<span style=" letter-spacing:-0.08em;">육청</span><span style=" letter-spacing:-0.04em;"> </span><span style=" letter-spacing:-0.04em; font-weight:bold;">학교공간혁신사업 추진 지원 및 현장지원센터 운영</span></p>
+<p class="ps104 cs118" style=" text-indent:-3.90%; margin:0.00pt 0.00% 0.00pt 6.72%;">3. <span style=" letter-spacing:-0.10em;">사용자 참여설계 </span><span style=" letter-spacing:-0.10em; font-weight:bold;">주체</span><span style=" font-size:13.00pt; line-height:140.00%; letter-spacing:-0.10em;">(교사, 퍼실리테이터, 업무담당자(시설, 계약, 감사 등))</span><span style=" letter-spacing:-0.10em;">에 대한</span> 교육·연수지원 및 기술자문</p>
+<p class="ps104 cs118" style=" margin:0.00pt 0.00% 0.00pt 2.82%;">4. 학교공간혁신사업 홍보 및 정보교환을 위한 <span style=" font-weight:bold;">홈페이지 제작 및 운영</span></p>
+<p class="ps104 cs118" style=" margin:0.00pt 0.00% 0.00pt 2.82%;">5. 학교공간혁신사업 및 학교시설 개선을 위한 <span style=" font-weight:bold;">정책연구 수행</span></p>
+<p class="ps104 cs118" style=" margin:0.00pt 0.00% 0.00pt 2.82%;">6. 학교공간혁신사업 <span style=" font-weight:bold;">사후평가 및 우수모델 발굴</span></p>
+<div class="ps104 cs125" style=""><table style="width:97.90%;vertical-align:text-bottom; display:inline-block; margin-top:0.00pt; margin-right:0.00pt; margin-bottom:0.00pt; margin-left:0.00pt; z-index:35;">
+<colgroup>
+<col style="width:464.92pt;">
+</colgroup>
+<tbody><tr>
+<td style=" border:dotted #0000FF 1.00px; padding:1.41pt 5.10pt; height:71.95pt;">
+<p class="ps105 cs88" style=" margin:3.00pt 0.00% 0.00pt 0.00%;">【작성방법】</p>
+<p class="ps105 cs88" style="">1) 법정업무 수행을 위한 분야별 세부 수행계획을 작성</p>
+<p class="ps105 cs88" style="">2) 분야별 업무 수행 관련 담당 인력(정·부) 현황을 제시</p>
+<p class="ps105 cs88" style="">3) 기타 관련 법령에서 정하는 업무 외 기관 자체 추진계획 업무가 있는 경우 제시</p>
+<p class="ps105 cs88" style="">4) 월별 사업추진계획을 명시</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div></div></div></div>
+</div>
+<div name="footer" style="width:100%; min-height:42.51pt; ">
+</div>
+</div>
+</div>
+
+
+</body></html>

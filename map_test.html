@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .bus-route {
+            width: 80%;
+            max-width: 500px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            position: relative;
+        }
+
+        .bus-stop {
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+        .bus-stop::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: #0074E4;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bus-stop_2 {
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+        .bus-stop_2::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #0074E4;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bus-route::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+        }
+
+        .grid_3{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(2, 2fr);
+        margin-left: -30%;
+    }
+
+    p{
+        margin-left: -30%;
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="bus-route">
+        <div class="bus-stop">천안역</div>
+        <div class="grid_3">
+            <i class="fa fa-male" style="font-size:36px"></i>
+            <p>천안역 동부광장 정류장까지 도보로 이동</p>
+        </div>
+        <div class="bus-stop">천안역 동부광장 정류장 승차</div>
+        <div class="grid_3">
+            <i class="fa fa-bus" style="font-size:36px"></i>
+            <p>700, 701, 702<br>21분, 11개 정류장 이동</p>
+        </div>
+        <div class="bus-stop_2">삼도상가</div>
+        <div class="bus-stop_2">복자여중고등학교</div>
+        <div class="bus-stop_2">방죽안오거리</div>
+        <div class="bus-stop_2">종합터미널</div>
+        <div class="bus-stop_2">대림한숲아파트</div>
+        <div class="bus-stop_2">천안톨게이트</div>
+        <div class="bus-stop_2">상명대학교</div>
+        <div class="bus-stop_2">단국대치대병원</div>
+        <div class="bus-stop_2">금호어울림아파트</div>
+        <div class="bus-stop_2">백석문화대</div>
+        <div class="bus-stop_2"><b>백석대정문 정류장 하차</b></div>
+        <div class="bus-stop">백석대학교까지 도보로 이동</div>
+        <i class="fa fa-male" style="font-size:36px"></i>
+        <div class="bus-stop">백석대학교</div>
+    </div>
+</body>
+</html>

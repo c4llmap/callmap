@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    html, body {
+        background-color: #F1F1F1;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr); /* 4개에서 2개로 줄임 */
+        grid-gap: 10px;
+        margin-top: -60px;
+    }
+
+    .box {
+        width: 90%;
+        color: aliceblue;
+        background-color: dodgerblue;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto -80px auto;
+    }
+
+    .box_2 {
+        width: 85%;
+        color: aliceblue;
+        background-color: dodgerblue;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .grid_2{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(2, 2fr);
+        margin-top: -265px;
+    }
+
+    img {
+        justify-content:center;
+        align-items:center;
+        width:90%;
+        height:70%;
+        border-radius:10px;
+        border:solid 1px dodgerblue;
+        box-shadow:2px 3.5px 3.5px 2px dodgerblue;
+        margin: 0 auto -40px auto;
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: seashell;
+        margin-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 10px; /* 더 작은 간격으로 조정 */
+    }
+
+    .wrapper {
+        border-radius: 2px;
+        box-sizing: border-box;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #000;
+        color: #000;
+        box-sizing: border-box;
+        font-family: 'Arvo';
+        font-size: 18px;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    input::placeholder {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    input:focus::placeholder {
+        color: dodgerblue;
+    }
+
+    .input:focus + .underline {
+        transform: scale(1);
+    }
+
+    .underline {
+        background-color: dodgerblue;
+        display: inline-block;
+        height: 2px;
+        margin-top: 10px;
+        transform: scale(0, 1);
+        transition: all 0.5s linear;
+        width: 100%;
+    }
+
+    .listening {
+        color: red;
+    }
+
+    @media screen and (max-width: 767px) {
+        .grid {
+            grid-template-rows: repeat(4, 1fr); /* 원래대로 복원 */
+        }
+        .box {
+            width: 85%; /* 좀 더 좁게 조정 */
+        }
+        h4 {
+            font-size: 1rem; /* 폰트 크기 축소 */
+        }
+        .input {
+            font-size: 16px; /* 폰트 크기 축소 */
+        }
+        .wrapper {
+            width: 85%; /* 좀 더 좁게 조정 */
+        }
+    }
+</style>
+<body>
+    <div class="grid">
+        <div class="box">
+            <a href="#">
+                <h4 id="voice-status" style="font-size:1.2em;">천안역 <b><i class="fa fa-exchange"></i></b> 백석대학교</h4>
+            </a>
+        </div>
+            <a href="https://kko.to/oNG3qLkrPD">
+                <img src="kakaomap.png" alt="map/png">
+            </a>
+            <div class="box" style="margin-bottom:-1px;">
+                <a href="#">
+                    <i class="fa fa-microphone" style="font-size:20px; color: seashell;"></i>
+                    <h4 id="voice-status">경로 음성안내</h4>
+                </a>
+            </div>
+    </div>
+
+    <div class="grid_2">
+        <div class="box_2">
+            <a href="cap.html" id="voice-search">
+                <i class="fa fa-cab" style="font-size:25px; color: seashell;"></i>
+                <h4 id="voice-status">택시 호출</h4>
+            </a>
+        </div>
+        <div class="box_2">
+            <a href="#" id="voice-search">
+                <i class="fa fa-commenting-o" style="font-size:25px; color: seashell;"></i>
+                <h4 id="voice-status">보호자 연락</h4>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

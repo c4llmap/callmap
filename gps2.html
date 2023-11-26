@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>카카오맵 최적 경로</title>
+    <style>
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>카카오맵 최적 경로</h1>
+    <div id="map"></div>
+
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=448eadffe9804bf4dddc9557e8959892"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(36.812645, 127.146713), // 출발지 좌표 (천안역)
+            level: 3 // 지도 확대 레벨
+        };
+
+        var map = new kakao.maps.Map(container, options);
+
+        // 목적지 주소를 검색하고 결과를 핸들링
+        var ps = new kakao.maps.services.Places();
+
+        ps.keywordSearch('백석대학교', function (data, status, pagination) {
+            if (status === kakao.maps.services.Status.OK) {
+                var destination = new kakao.maps.LatLng(data[0].y, data[0].x); // 목적지 좌표 (백석대학교)
+
+                // 길찾기 서비스 객체를 생성
+                var route = new kakao.maps.services.Route();
+                route.zoomTo(11);
+
+                // 경로 정보 요청
+                route.route({
+                    origin: new kakao.maps.LatLng(36.812645, 127.146713), // 출발지 좌표 (천안역)
+                    destination: destination,
+                    travelMode: kakao.maps.services.TravelMode.TRANSIT,
+                    drawPath: {
+                        strokeColor: '#39DE2A',
+                        strokeWeight: 5
+                    },
+                    autoAvoidTraffic: true,
+                    preserveViewport: true,
+                    subCoord: 'WGS84',
+                    // 경로 결과를 출력
+                    path: function (result, status) {
+                        if (status === 'OK') {
+                            var pathData = result.path;
+                            var pathIndex = 0;
+                            displayPath(pathData, pathIndex);
+                        }
+                    }
+                });
+            }
+        });
+
+        function displayPath(pathData, pathIndex) {
+            // 경로를 지도에 표시
+            var path = pathData[pathIndex];
+            var linePath = [];
+            for (var i = 0, len = path.length; i < len; i++) {
+                linePath.push(new kakao.maps.LatLng(path[i].y, path[i].x));
+            }
+            var polyline = new kakao.maps.Polyline({
+                path: linePath,
+                strokeWeight: 5,
+                strokeColor: '#39DE2A',
+                strokeOpacity: 0.7,
+            });
+            polyline.setMap(map);
+        }
+    </script>
+</body>
+</html>

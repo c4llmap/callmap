@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>카메라 돋보기</title>
+    <style>
+        #camera {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>카메라 돋보기</h1>
+    <div id="camera"></div>
+    
+    <script>
+        // DOM 요소와 카메라 객체 초기화
+        const cameraElement = document.getElementById('camera');
+        const options = { video: { facingMode: 'environment' } };
+        let cameraStream;
+
+        // 화면을 터치하면 카메라 활성화
+        cameraElement.addEventListener('click', async () => {
+            try {
+                cameraStream = await navigator.mediaDevices.getUserMedia(options);
+                cameraElement.srcObject = cameraStream;
+            } catch (error) {
+                console.error('카메라를 시작하는 동안 오류 발생:', error);
+            }
+        });
+
+        // 핀치(손가락으로 확대 및 축소) 이벤트를 처리
+        let scale = 1;
+        let prevDistance = 0;
+        let isScaling = false;
+
+        cameraElement.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 2) {
+                isScaling = true;
+                const x1 = e.touches[0].clientX;
+                const x2 = e.touches[1].clientX;
+                const y1 = e.touches[0].clientY;
+                const y2 = e.touches[1].clientY;
+                prevDistance = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+            }
+        });
+
+        cameraElement.addEventListener('touchmove', (e) => {
+            if (isScaling && e.touches.length === 2) {
+                const x1 = e.touches[0].clientX;
+                const x2 = e.touches[1].clientX;
+                const y1 = e.touches[0].clientY;
+                const y2 = e.touches[1].clientY;
+                const newDistance = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+                const scaleChange = newDistance / prevDistance;
+                scale *= scaleChange;
+                cameraElement.style.transform = `scale(${scale})`;
+                prevDistance = newDistance;
+            }
+        });
+
+        cameraElement.addEventListener('touchend', (e) => {
+            if (e.touches.length !== 2) {
+                isScaling = false;
+            }
+        });
+    </script>
+</body>
+</html>

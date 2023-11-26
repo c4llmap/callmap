@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>카카오맵 길찾기 시스템</title>
+</head>
+<body>
+    <h1>길찾기 시스템</h1>
+    <div id="map" style="width: 100%; height: 500px;"></div>
+    <form>
+        <label for="start">출발지: </label>
+        <input type="text" id="start" placeholder="출발지 입력">
+        <label for="end">도착지: </label>
+        <input type="text" id="end" placeholder="도착지 입력">
+        <button id="findRoute">길 찾기</button>
+    </form>
+    
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=448eadffe9804bf4dddc9557e8959892"></script>
+    <script type="text/javascript">
+        var map;
+        var startMarker, endMarker;
+        var directionsService = new kakao.maps.services.Direction();
+        var directionsDisplay = new kakao.maps.services.Places();
+
+        kakao.maps.load(function () {
+            var mapContainer = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(37.566826, 126.9786567), // 서울의 좌표를 중심으로 설정
+                level: 3
+            };
+            map = new kakao.maps.Map(mapContainer, options);
+        });
+
+        document.getElementById('findRoute').addEventListener('click', function () {
+            var start = document.getElementById('start').value;
+            var end = document.getElementById('end').value;
+            
+            directionsService.route({
+                name: "길찾기",
+                origin: start,
+                destination: end,
+                travelMode: kakao.maps.services.TravelMode.TRANSIT
+            }, function (result, status) {
+                if (status === kakao.maps.services.Status.OK) {
+                    var path = result.routes[0].section;
+                    var distance = path.distance;
+                    var duration = path.duration;
+                    var coords = path.coords;
+                    var polyline = new kakao.maps.Polyline({
+                        path: coords,
+                        strokeWeight: 3,
+                        strokeColor: '#FFAE00',
+                        strokeOpacity: 0.7,
+                        strokeStyle: 'solid'
+                    });
+                    polyline.setMap(map);
+
+                    // 출발지와 도착지 마커 표시
+                    if (startMarker) startMarker.setMap(null);
+                    startMarker = new kakao.maps.Marker({
+                        position: coords[0]
+                    });
+                    startMarker.setMap(map);
+
+                    if (endMarker) endMarker.setMap(null);
+                    endMarker = new kakao.maps.Marker({
+                        position: coords[coords.length - 1]
+                    });
+                    endMarker.setMap(map);
+
+                    alert("총 거리: " + distance + "m, 소요시간: " + duration + "분");
+                } else {
+                    alert("길찾기 실패: " + status);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

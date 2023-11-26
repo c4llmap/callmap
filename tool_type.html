@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <title>디지털 훈민정음</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #exercise-container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        #word-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        #word {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        #input {
+            width: 80%;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="exercise-container">
+        <h1>단어 연습장</h1>
+        <div id="word-container">
+            <p id="word">단어를 입력하세요.</p>
+        </div>
+        <input type="text" id="input" placeholder="여기에 입력하세요">
+        <p id="message"></p>
+    </div>
+
+    <script>
+        const wordElement = document.getElementById("word");
+        const inputElement = document.getElementById("input");
+        const messageElement = document.getElementById("message");
+
+        const words = [
+            "사과", "바나나", "딸기", "수박", "포도", "복숭아",
+            "강아지", "고양이", "토끼", "거북이", "호랑이",
+            "노랑", "파랑", "빨강", "초록", "녹색",
+            "학교", "선생님", "학생", "과학", "수학",
+            "햇님", "달님", "별", "우주", "비행기",
+            "자전거", "자동차", "택시", "버스", "전철",
+            "우산", "비", "눈", "바람", "구름",
+            "컴퓨터", "인터넷", "스마트폰", "어플리케이션", "카메라",
+            "음악", "영화", "책", "신문", "라디오"
+        ];
+
+        let currentWordIndex = 0;
+        wordElement.textContent = words[currentWordIndex];
+
+        inputElement.addEventListener("input", function() {
+            const inputWord = inputElement.value.trim();
+            if (inputWord === words[currentWordIndex]) {
+                messageElement.textContent = "O";
+                messageElement.style.color = "green";
+                currentWordIndex++;
+                if (currentWordIndex < words.length) {
+                    wordElement.textContent = words[currentWordIndex];
+                    inputElement.value = "";
+                } else {
+                    wordElement.textContent = "연습이 끝났습니다.";
+                    inputElement.disabled = true;
+                }
+            } else {
+                messageElement.textContent = "X";
+                messageElement.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>

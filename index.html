@@ -17,6 +17,7 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        
     }
 
     .grid {
@@ -53,8 +54,8 @@
     .box_3{
         width: auto;
         height: auto;
-        background-color: dodgerblue;
-        border-radius: 50px;
+        
+        border-radius: 10px;
         display: absolute;
         flex-direction: column;
         justify-content: center;
@@ -63,6 +64,40 @@
         margin: 10px auto;
         margin-left: 80%;
     }
+
+    /*pedometer bar*/
+    .progress-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+
+        .progress-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .percentage-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            z-index: 2;
+        }
+
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
 
     .box {
         width: 90%;
@@ -149,8 +184,6 @@
 
     /*robot container*/
     #robot-container {
-            border:px solid;
-            border-radius:50px;
             position: relative;
             width: 75px;
             height: 75px;
@@ -163,8 +196,6 @@
         #robot-image {
             width: 100%;
             height: 100%;
-            border:0px solid;
-            border-radius:50px;
         }
 
         .speech-bubble {
@@ -257,9 +288,17 @@
         </div>
 
         <div class="box_3">
-            <div id="robot-container">
-                <img id="robot-image" src="robot.jpg" alt="Robot">
-                <div class="speech-bubble" id="speech-bubble"></div>
+            <div class="progress-container">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#ddd" />
+                    <circle id="progress-bar" cx="50" cy="50" r="40" fill="transparent" stroke="dodgerblue" stroke-width="10" stroke-dasharray="0 251.32741228718345" transform="rotate(-90 50 50)" />
+                </svg>
+                <div class="center-content">
+                    <div id="robot-container">
+                        <img id="robot-image" src="robot.png" alt="Robot">
+                        <div class="speech-bubble" id="speech-bubble"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -307,6 +346,7 @@
     const sentences = [
         '',
         '안녕하세요!',
+        '오늘은 2500 걸음을 걸으셨어요!',
         '저는 당신의 가이드 새싹이 입니다!',
         '어떤 곳을 찾고 계신가요?',
         '제게 말씀 해 주세요!',
@@ -324,6 +364,25 @@
             speechBubble.classList.add('show');
         }, 500);
     }, 2500);
+
+    /*pedomter*/
+    let currentPercentage = 25;
+        const maxPercentage = 25; 
+        const progressBar = document.getElementById('progress-bar');
+        const percentageDisplay = document.getElementById('percentage');
+
+        function updatePercentage() {
+            currentPercentage += 1;
+            if (currentPercentage > maxPercentage) {
+                currentPercentage = maxPercentage;
+            }
+
+            const dashArray = (currentPercentage / 100) * 251.32741228718345; // Circumference of a circle with radius 40
+            progressBar.style.strokeDasharray = `${dashArray} 251.32741228718345`;
+            percentageDisplay.textContent = `${currentPercentage}%`;
+        }
+
+        setInterval(updatePercentage, 100);
     </script>
 </body>
 
